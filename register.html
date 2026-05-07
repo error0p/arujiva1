@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration — SANGAMA 2026: International Integrated Oncology Symposium</title>
+  <meta name="description" content="Register for SANGAMA 2026: International Integrated Oncology Symposium — Karnataka's premier state-level symposium on integrative cancer care." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      corePlugins: { preflight: false }
+    }
+  </script>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="register.css" />
+</head>
+<body>
+
+  <!-- ═══════════ TOP NAV ═══════════ -->
+  <section class="w-full backdrop-blur-md font-inter font-sans border-b border-white/10 z-50 sticky top-0" style="background: rgba(44, 44, 44, 0.8);">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4" aria-label="Main navigation">
+      <div class="flex items-center gap-4">
+        <a href="index.html" class="flex items-center gap-2" aria-label="Home">
+          <img src="sangama-logo-transparent.png" alt="SANGAMA Logo" class="h-20 w-auto object-contain">
+        </a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="index.html" class="btn-nav-back" id="btn-back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          <span>Back to Home</span>
+        </a>
+      </div>
+    </nav>
+  </section>
+
+  <!-- ═══════════ PAGE HEADER ═══════════ -->
+  <section class="page-hero relative overflow-hidden" id="page-hero">
+    <div class="video-container" style="position: absolute; inset: 0; overflow: hidden; z-index: 0;">
+      <iframe 
+        src="https://www.youtube.com/embed/JFzJr7Wn8B4?autoplay=1&mute=1&loop=1&playlist=JFzJr7Wn8B4&controls=0&showinfo=0&rel=0&disablekb=1&modestbranding=1&iv_load_policy=3" 
+        frameborder="0" 
+        allow="autoplay; encrypted-media" 
+        style="width: 100vw; height: 56.25vw; min-height: 100vh; min-width: 177.77vh; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;">
+      </iframe>
+    </div>
+    <!-- Overlay to ensure text readability -->
+    <div style="position: absolute; inset: 0; background: rgba(7, 34, 74, 0.45); z-index: 0;"></div>
+    
+    <div class="page-hero-inner" style="position: relative; z-index: 1;">
+      <span class="page-label">SANGAMA 2026: International Integrated Oncology Symposium</span>
+      <h1 class="page-title">Registration</h1>
+      <p class="page-subtitle">Complete the form below to secure your spot at Karnataka's premier integrative oncology symposium.</p>
+    </div>
+  </section>
+
+  <!-- ═══════════ REGISTRATION FORM ═══════════ -->
+  <section class="form-section" id="form-section">
+    <div class="reg-container">
+      <div class="form-card" id="form-card">
+        <h2 class="form-card-title">Registration Form</h2>
+        <p class="form-card-sub">Fields marked with <span class="req">*</span> are mandatory</p>
+
+        <form id="registration-form" novalidate autocomplete="off">
+
+          <!-- ── Personal Information ── -->
+          <div class="form-block">
+            <h3 class="block-title">Personal Information</h3>
+
+            <div class="field" id="f-fullname">
+              <label for="fullname">Full Name <span class="req">*</span></label>
+              <input type="text" id="fullname" name="fullname" placeholder="As per ID proof" required />
+              <span class="err">Please enter your full name</span>
+            </div>
+
+            <div class="field-row">
+              <div class="field" id="f-email">
+                <label for="email">Email Address <span class="req">*</span></label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                <span class="err">Please enter a valid email</span>
+              </div>
+              <div class="field" id="f-mobile">
+                <label for="mobile">Mobile Number <span class="req">*</span></label>
+                <div class="phone-row">
+                  <input type="text" id="country-code" class="country-code" value="+91" />
+                  <input type="tel" id="mobile" name="mobile" class="phone-input" placeholder="98765 43210" required />
+                </div>
+                <span class="err">Please enter a valid mobile number</span>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field" id="f-institution">
+                <label for="institution">Institution / Affiliation <span class="req">*</span></label>
+                <input type="text" id="institution" name="institution" placeholder="College / Hospital / Practice name" required />
+                <span class="err">Please enter your institution</span>
+              </div>
+              <div class="field" id="f-city">
+                <label for="city">City <span class="req">*</span></label>
+                <input type="text" id="city" name="city" placeholder="e.g. Bengaluru" required />
+                <span class="err">Please enter your city</span>
+              </div>
+            </div>
+
+            <div class="field" id="f-state">
+              <label for="state">State <span class="req">*</span></label>
+              <select id="state" name="state" required>
+                <option value="" disabled selected>Select state</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Other">Other States</option>
+              </select>
+              <span class="err">Please select a state</span>
+            </div>
+          </div>
+
+
+          <!-- ── Professional Details ── -->
+          <div class="form-block">
+            <h3 class="block-title">Professional Details</h3>
+
+            <div class="field" id="f-medicine">
+              <label for="medicine">System of Medicine <span class="req">*</span></label>
+              <select id="medicine" name="medicine" required>
+                <option value="" disabled selected>Select system of medicine</option>
+                <option value="MBBS/MD/MS">MBBS / MD / MS</option>
+                <option value="BDS/MDS">BDS / MDS</option>
+                <option value="BAMS/MD(Ayu)">BAMS / MD(Ayu)</option>
+                <option value="BNYS">BNYS</option>
+                <option value="BUMS">BUMS</option>
+                <option value="BHMS">BHMS</option>
+                <option value="B.Pharm">B.Pharm</option>
+                <option value="Yoga">Yoga</option>
+                <option value="Other">Other</option>
+              </select>
+              <span class="err">Please select system of medicine</span>
+            </div>
+
+            <div class="field-row">
+              <div class="field" id="f-council-reg">
+                <label for="council-reg">Council Registration Number <span class="req">*</span></label>
+                <input type="text" id="council-reg" name="councilReg" placeholder="MCI/DCI/AYUSH Council No." required />
+                <span class="err">Mandatory for practitioners</span>
+              </div>
+              <div class="field" id="f-council-name">
+                <label for="council-name">Name of Council <span class="req">*</span></label>
+                <select id="council-name" name="councilName" required>
+                  <option value="" disabled selected>Select council</option>
+                  <option value="Medical Council of India">Medical Council of India</option>
+                  <option value="Dental Council of India">Dental Council of India</option>
+                  <option value="Central Council of Indian Medicine">Central Council of Indian Medicine</option>
+                  <option value="Central Council of Homeopathy">Central Council of Homeopathy</option>
+                  <option value="Not Applicable">Not Applicable (for students)</option>
+                </select>
+                <span class="err">Please select council</span>
+              </div>
+            </div>
+
+            <div class="field" id="f-position">
+              <label for="position">Current Position <span class="req">*</span></label>
+              <select id="position" name="position" required>
+                <option value="" disabled selected>Select position</option>
+                <option value="PG Student">PG Student</option>
+                <option value="Faculty">Faculty</option>
+                <option value="Practicing Physician">Practicing Physician</option>
+                <option value="Researcher">Researcher</option>
+                <option value="Other">Other</option>
+              </select>
+              <span class="err">Please select your position</span>
+            </div>
+
+            <div class="field" id="f-presenting">
+              <label>Are you presenting a paper / poster? <span class="req">*</span></label>
+              <div class="radio-row">
+                <label class="radio-inline">
+                  <input type="radio" name="presenting" value="Yes" required />
+                  <span>Yes</span>
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="presenting" value="No" />
+                  <span>No</span>
+                </label>
+              </div>
+              <p class="field-hint" id="abstract-hint" style="display:none;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                Please submit your abstract via the <a href="abstract.html" target="_blank">Abstract Submission page</a>.
+              </p>
+              <span class="err">Please select an option</span>
+            </div>
+          </div>
+
+          <!-- ── Preferences ── -->
+          <div class="form-block">
+            <h3 class="block-title">Preferences</h3>
+
+            <div class="field" id="f-dietary">
+              <label>Dietary Preference <span class="req">*</span></label>
+              <div class="radio-row">
+                <label class="radio-inline">
+                  <input type="radio" name="dietary" value="Vegetarian" required />
+                  <span>🥬 Vegetarian</span>
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="dietary" value="Non-Vegetarian" />
+                  <span>🍗 Non-Vegetarian</span>
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="dietary" value="Vegan" />
+                  <span>🌱 Vegan</span>
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="dietary" value="Jain" />
+                  <span>🪷 Jain</span>
+                </label>
+              </div>
+              <span class="err">Please select your dietary preference</span>
+            </div>
+
+            <div class="field" id="f-hearabout">
+              <label for="hearabout">How did you hear about SANGAMA Onco Conclave?</label>
+              <select id="hearabout" name="hearabout">
+                <option value="" disabled selected>Select</option>
+                <option value="Social Media">Social Media</option>
+                <option value="Email">Email</option>
+                <option value="College Notice">College Notice</option>
+                <option value="Colleague">Colleague</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+
+
+          <!-- ── Submit ── -->
+          <div class="form-submit">
+            <button type="submit" class="btn btn-submit" id="btn-submit">
+              <span class="btn-text">Submit Registration</span>
+              <span class="spinner"></span>
+            </button>
+          </div>
+
+        </form>
+
+        <!-- ── Success State ── -->
+        <div class="success-card" id="success-card">
+          <div class="success-icon">
+            <svg viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.5" opacity="0.2"/>
+              <polyline class="check-path" points="7 12 10.5 15.5 17 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </div>
+          <h3>Registration Submitted!</h3>
+          <p>Thank you for registering for <strong>SANGAMA 2026: International Integrated Oncology Symposium</strong>. A confirmation email will be sent to your registered email address shortly.</p>
+          <span class="ref-badge" id="ref-badge">REF: SGM-000000</span>
+          <a href="index.html" class="btn btn-primary" style="margin-top:1.5rem;">
+            <span>Back to Home</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="site-footer" id="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="sangama-logo.png" alt="SANGAMA Logo" class="footer-logo-img">
+          <p class="footer-tagline">
+            <strong>SANGAMA 2026</strong> — Karnataka's premier integrated oncology symposium.<br/>
+            Uniting Wisdom. Advancing Care. Transforming Lives.
+          </p>
+          <p class="footer-tagline" style="margin-top: 1rem; opacity: 0.6; font-size: 0.8rem;">
+            A unit of Maanaveeya Kalyana Trust<br/>
+            Founding member of Ayush Excil
+          </p>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Connect</h4>
+          <div class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Survey No 512/1A, Srinivas Saradgi, Kalaburagi, 585102</span>
+          </div>
+          <div class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <span><a href="tel:+917411297555">7411 297 555</a></span>
+          </div>
+          <div class="contact-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span><a href="mailto:reservations@sangamaconclave.com">Email Us</a></span>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Conference Schedule</a></li>
+            <li><a href="#">Speaker Profiles</a></li>
+            <li><a href="#">Travel & Stay</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 SANGAMA. All rights reserved.</p>
+        <p>Holistically Crafted by <a href="https://aarts.in/" target="_blank">Aarts</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="register.js"></script>
+</body>
+</html>

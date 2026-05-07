@@ -1,0 +1,174 @@
+/* ========================================
+   REGISTER PAGE — Form Logic
+   ======================================== */
+
+(function () {
+  'use strict';
+
+  const form = document.getElementById('registration-form');
+  const formCard = document.getElementById('form-card');
+  const successCard = document.getElementById('success-card');
+  const refBadge = document.getElementById('ref-badge');
+  const abstractHint = document.getElementById('abstract-hint');
+
+  // ── Clear errors on input ──
+  document.querySelectorAll('.field input, .field select').forEach(el => {
+    const handler = () => {
+      el.classList.remove('has-error');
+      const err = el.closest('.field').querySelector('.err');
+      if (err) err.classList.remove('show');
+    };
+    el.addEventListener('input', handler);
+    el.addEventListener('change', handler);
+  });
+
+  // ── Radio card visual toggle ──
+  document.querySelectorAll('.radio-card input, .radio-inline input').forEach(radio => {
+    radio.addEventListener('change', () => {
+      const group = radio.closest('.field');
+      if (group) {
+        const err = group.querySelector('.err');
+        if (err) err.classList.remove('show');
+      }
+    });
+  });
+
+  // ── Show/hide abstract hint ──
+  document.querySelectorAll('input[name="presenting"]').forEach(radio => {
+    radio.addEventListener('change', () => {
+      if (radio.value === 'Yes' && radio.checked) {
+        abstractHint.style.display = 'flex';
+      } else {
+        abstractHint.style.display = 'none';
+      }
+    });
+  });
+
+  // ── Validation ──
+  function showError(fieldId) {
+    const field = document.getElementById(fieldId);
+    if (!field) return;
+    const input = field.querySelector('input, select');
+    const err = field.querySelector('.err');
+    if (input) input.classList.add('has-error');
+    if (err) err.classList.add('show');
+  }
+
+  function showRadioError(fieldId) {
+    const field = document.getElementById(fieldId);
+    if (!field) return;
+    const err = field.querySelector('.err');
+    if (err) err.classList.add('show');
+  }
+
+  function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  }
+
+  function validate() {
+    // Clear all
+    document.querySelectorAll('.has-error').forEach(el => el.classList.remove('has-error'));
+    document.querySelectorAll('.err.show').forEach(el => el.classList.remove('show'));
+
+    let valid = true;
+    let firstError = null;
+
+    // Personal Info
+    const fullname = document.getElementById('fullname').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const mobile = document.getElementById('mobile').value.trim();
+    const institution = document.getElementById('institution').value.trim();
+    const city = document.getElementById('city').value.trim();
+    const state = document.getElementById('state').value;
+
+    if (!fullname) { showError('f-fullname'); valid = false; firstError = firstError || 'f-fullname'; }
+    if (!email || !isValidEmail(email)) { showError('f-email'); valid = false; firstError = firstError || 'f-email'; }
+    if (!mobile || mobile.replace(/\D/g, '').length < 7) { showError('f-mobile'); valid = false; firstError = firstError || 'f-mobile'; }
+    if (!institution) { showError('f-institution'); valid = false; firstError = firstError || 'f-institution'; }
+    if (!city) { showError('f-city'); valid = false; firstError = firstError || 'f-city'; }
+    if (!state) { showError('f-state'); valid = false; firstError = firstError || 'f-state'; }
+
+    // Category
+    const category = document.querySelector('input[name="category"]:checked');
+    if (!category) { showRadioError('f-category'); valid = false; firstError = firstError || 'f-category'; }
+
+    // Professional
+    const medicine = document.getElementById('medicine').value;
+    const councilReg = document.getElementById('council-reg').value.trim();
+    const councilName = document.getElementById('council-name').value;
+    const position = document.getElementById('position').value;
+    const presenting = document.querySelector('input[name="presenting"]:checked');
+
+    if (!medicine) { showError('f-medicine'); valid = false; firstError = firstError || 'f-medicine'; }
+    if (!councilReg) { showError('f-council-reg'); valid = false; firstError = firstError || 'f-council-reg'; }
+    if (!councilName) { showError('f-council-name'); valid = false; firstError = firstError || 'f-council-name'; }
+    if (!position) { showError('f-position'); valid = false; firstError = firstError || 'f-position'; }
+    if (!presenting) { showRadioError('f-presenting'); valid = false; firstError = firstError || 'f-presenting'; }
+
+    // Preferences
+    const dietary = document.querySelector('input[name="dietary"]:checked');
+    if (!dietary) { showRadioError('f-dietary'); valid = false; firstError = firstError || 'f-dietary'; }
+
+    // Declaration
+    const declaration = document.getElementById('declaration').checked;
+    if (!declaration) {
+      const declErr = document.querySelector('#f-declaration .err');
+      if (declErr) declErr.classList.add('show');
+      valid = false;
+      firstError = firstError || 'f-declaration';
+    }
+
+    // Scroll to first error
+    if (firstError) {
+      document.getElementById(firstError).scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    return valid;
+  }
+
+  // ── Submit ──
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!validate()) return;
+
+    const submitBtn = document.getElementById('btn-submit');
+    submitBtn.classList.add('loading');
+    submitBtn.disabled = true;
+
+    setTimeout(() => {
+      const ref = 'SGM-' + String(Math.floor(100000 + Math.random() * 900000));
+      refBadge.textContent = 'REF: ' + ref;
+
+      form.style.display = 'none';
+      document.querySelector('.form-card-title').style.display = 'none';
+      document.querySelector('.form-card-sub').style.display = 'none';
+      successCard.classList.add('show');
+      successCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      submitBtn.classList.remove('loading');
+      submitBtn.disabled = false;
+    }, 1800);
+  });
+
+  // ── Scroll reveal ──
+  const reveals = document.querySelectorAll('.fee-card, .form-card');
+  reveals.forEach(el => el.classList.add('reveal'));
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.08 }
+    );
+    reveals.forEach(el => observer.observe(el));
+  } else {
+    reveals.forEach(el => el.classList.add('visible'));
+  }
+
+})();

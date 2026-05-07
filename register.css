@@ -1,0 +1,710 @@
+/* ========================================
+   REGISTER PAGE — Styles
+   Extends index.css
+   ======================================== */
+
+/* ── Solid Navbar (for inner pages) ── */
+.top-nav--solid {
+  background: var(--charcoal);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+.btn-nav-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1.2rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.7);
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: all var(--transition);
+}
+.btn-nav-back:hover {
+  color: var(--white);
+  border-color: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.06);
+}
+
+/* ── Page Hero (compact) ── */
+.page-hero {
+  background: var(--sage-dark);
+  padding: 3.5rem 2rem 3rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Ccircle cx='40' cy='40' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.page-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+  animation: fadeUp 0.7s ease both;
+}
+
+.page-label {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #b2f0e0;
+  background: rgba(178, 240, 224, 0.1);
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+.page-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400;
+  color: var(--white);
+  letter-spacing: 0.03em;
+  margin-bottom: 0.8rem;
+}
+
+.page-subtitle {
+  font-size: 0.92rem;
+  font-weight: 300;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.7;
+}
+
+/* ── Fee Section ── */
+.fee-section {
+  padding: 3rem 1.5rem 0;
+  background: var(--cream);
+}
+
+.reg-container {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.fee-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 3rem;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--cream-dark);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.fee-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.fee-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--charcoal);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.fee-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+.fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.fee-table th {
+  text-align: left;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--charcoal-light);
+  padding: 0.8rem 1rem;
+  background: var(--cream);
+  border-bottom: 2px solid var(--cream-dark);
+}
+
+.fee-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--cream-dark);
+  color: var(--charcoal-light);
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.fee-table td strong {
+  color: var(--charcoal);
+  font-weight: 500;
+}
+
+.fee-detail {
+  font-size: 0.78rem;
+  color: #999;
+}
+
+.fee-amount {
+  font-weight: 600;
+  color: var(--sage-dark) !important;
+  font-size: 1.05rem;
+  white-space: nowrap;
+}
+
+.meals-note {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  padding: 1rem 1.2rem;
+  background: rgba(107, 143, 113, 0.06);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--sage);
+}
+
+.meals-note svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--sage);
+}
+
+.meals-note p {
+  font-size: 0.82rem;
+  color: var(--charcoal-light);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.meals-note strong {
+  font-weight: 500;
+  color: var(--charcoal);
+}
+
+/* ── Form Section ── */
+.form-section {
+  padding: 2.5rem 1.5rem 4rem;
+  background: var(--cream);
+}
+
+.form-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 3rem;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--cream-dark);
+}
+
+.form-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--charcoal);
+  margin-bottom: 0.3rem;
+}
+
+.form-card-sub {
+  font-size: 0.82rem;
+  color: var(--charcoal-light);
+  font-weight: 300;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.req {
+  color: var(--terracotta);
+  font-weight: 600;
+}
+
+/* Form Blocks */
+.form-block {
+  margin-bottom: 2.5rem;
+}
+
+.block-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--sage-dark);
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--cream-dark);
+  letter-spacing: 0.03em;
+}
+
+/* Fields */
+.field {
+  margin-bottom: 1.3rem;
+}
+
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.field label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--charcoal-light);
+  margin-bottom: 0.35rem;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  color: var(--charcoal);
+  background: var(--cream);
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: all var(--transition);
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.field input::placeholder {
+  color: #b5b0a8;
+  font-weight: 300;
+}
+
+.field input:hover,
+.field select:hover {
+  border-color: var(--sage-light);
+}
+
+.field input:focus,
+.field select:focus {
+  background: var(--white);
+  border-color: var(--sage);
+  box-shadow: 0 0 0 4px rgba(11, 58, 122, 0.1);
+}
+
+.field input.has-error,
+.field select.has-error {
+  border-color: var(--error);
+  box-shadow: 0 0 0 3px rgba(196, 74, 74, 0.08);
+}
+
+.field select {
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M6 8L1 3h10z' fill='%235a5a5a'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+/* Phone row */
+.phone-row {
+  display: flex;
+  gap: 0.5rem;
+}
+.phone-row .country-code {
+  width: 80px;
+  flex-shrink: 0;
+  text-align: center;
+}
+.phone-row .phone-input {
+  flex: 1;
+}
+
+/* Error messages */
+.err {
+  font-size: 0.7rem;
+  color: var(--error);
+  margin-top: 0.3rem;
+  display: none;
+  animation: shakeX 0.4s ease;
+}
+.err.show {
+  display: block;
+}
+
+@keyframes shakeX {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* ── Radio Cards (Category selection) ── */
+.radio-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+}
+
+.radio-card {
+  cursor: pointer;
+  display: block;
+}
+
+.radio-card input {
+  display: none;
+}
+
+.rc-inner {
+  padding: 1.2rem 1rem;
+  background: var(--cream);
+  border: 2px solid transparent;
+  border-radius: var(--radius-md);
+  text-align: center;
+  transition: all var(--transition);
+}
+
+.rc-inner:hover {
+  border-color: var(--sage-light);
+}
+
+.radio-card input:checked + .rc-inner {
+  border-color: var(--sage);
+  background: rgba(107, 143, 113, 0.06);
+  box-shadow: 0 0 0 3px rgba(107, 143, 113, 0.1);
+}
+
+.rc-title {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--charcoal);
+  margin-bottom: 0.3rem;
+}
+
+.rc-price {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--sage-dark);
+  margin-bottom: 0.3rem;
+}
+
+.rc-desc {
+  display: block;
+  font-size: 0.7rem;
+  color: #999;
+  font-weight: 300;
+}
+
+/* ── Inline Radios ── */
+.radio-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.3rem;
+}
+
+.radio-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 1rem;
+  background: var(--cream);
+  border: 1.5px solid transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  color: var(--charcoal-light);
+  transition: all var(--transition);
+}
+
+.radio-inline:hover {
+  border-color: var(--sage-light);
+}
+
+.radio-inline input {
+  display: none;
+}
+
+.radio-inline:has(input:checked) {
+  border-color: var(--sage);
+  background: rgba(107, 143, 113, 0.08);
+  color: var(--sage-dark);
+  font-weight: 500;
+}
+
+/* Field hint */
+.field-hint {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--sage-dark);
+  padding: 0.5rem 0.8rem;
+  background: rgba(107, 143, 113, 0.06);
+  border-radius: var(--radius-sm);
+}
+
+.field-hint a {
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* ── Checkbox / Declaration ── */
+.declaration-field {
+  padding: 1.2rem 1.5rem;
+  background: var(--cream);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--cream-dark);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition);
+}
+
+.checkbox-label:hover {
+  background: rgba(107, 143, 113, 0.04);
+}
+
+.checkbox-label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.custom-checkbox {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border: 2px solid #cbd5e1;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition);
+  background: var(--white);
+  margin-top: 2px;
+}
+
+.custom-checkbox svg {
+  width: 14px;
+  height: 14px;
+  color: var(--white);
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all var(--transition);
+}
+
+.checkbox-label input[type="checkbox"]:checked + .custom-checkbox {
+  background: var(--sage);
+  border-color: var(--sage);
+  box-shadow: 0 2px 8px rgba(107, 143, 113, 0.3);
+}
+
+.checkbox-label input[type="checkbox"]:focus + .custom-checkbox {
+  box-shadow: 0 0 0 3px rgba(107, 143, 113, 0.2);
+}
+
+.checkbox-label input[type="checkbox"]:checked + .custom-checkbox svg {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.cb-text {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--charcoal-light);
+  line-height: 1.6;
+}
+
+/* ── Submit ── */
+.form-submit {
+  padding-top: 1rem;
+  border-top: 1px solid var(--cream-dark);
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: var(--amber);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition);
+  box-shadow: 0 4px 18px rgba(196, 154, 60, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-poppins);
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(196, 154, 60, 0.4);
+}
+.btn-submit:active { transform: translateY(0); }
+
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.btn-submit .spinner {
+  display: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: var(--white);
+  border-radius: var(--radius-full);
+  animation: spin 0.6s linear infinite;
+}
+.btn-submit.loading .spinner { display: inline-block; }
+.btn-submit.loading .btn-text { display: none; }
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Success Card ── */
+.success-card {
+  display: none;
+  text-align: center;
+  padding: 3rem 2rem;
+  animation: fadeUp 0.7s ease;
+}
+.success-card.show {
+  display: block;
+}
+
+.success-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 1.5rem;
+  color: var(--sage);
+  animation: scaleIn 0.5s ease;
+}
+.success-icon svg {
+  width: 100%;
+  height: 100%;
+}
+.success-icon .check-path {
+  stroke-dasharray: 30;
+  stroke-dashoffset: 30;
+  animation: drawCheck 0.6s ease 0.3s forwards;
+}
+
+@keyframes drawCheck {
+  to { stroke-dashoffset: 0; }
+}
+
+.success-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--charcoal);
+  margin-bottom: 0.5rem;
+}
+
+.success-card p {
+  color: var(--charcoal-light);
+  font-size: 0.92rem;
+  font-weight: 300;
+  line-height: 1.7;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.ref-badge {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  background: var(--cream);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--sage-dark);
+  letter-spacing: 0.08em;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 2.5rem 1.5rem 2rem;
+  }
+
+  .fee-card,
+  .form-card {
+    padding: 1.5rem;
+  }
+
+  .field-row {
+    grid-template-columns: 1fr;
+  }
+
+  .radio-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .radio-row {
+    flex-direction: column;
+  }
+
+  .radio-inline {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero {
+    padding: 2rem 1rem;
+  }
+
+  .page-title {
+    font-size: 1.6rem;
+  }
+
+  .fee-card,
+  .form-card {
+    padding: 1.2rem;
+  }
+
+  .fee-table {
+    font-size: 0.8rem;
+  }
+
+  .fee-table th,
+  .fee-table td {
+    padding: 0.6rem;
+  }
+}
