@@ -37,20 +37,28 @@
     reveals.forEach(el => el.classList.add('visible'));
   }
 
-  // ── Navbar scroll effect ──
-  const nav = document.getElementById('top-nav');
+  // ── Navbar hide-on-scroll ──
+  const nav = document.querySelector('.ataraxis-header');
+  let lastScrollTop = 0;
+  const scrollThreshold = 100;
+
   if (nav) {
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        nav.style.background = 'rgba(7, 34, 74, 0.95)';
-        nav.style.padding = '0.5rem 0';
-        nav.style.boxShadow = '0 10px 30px rgba(0,0,0,0.2)';
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      
+      // Don't do anything if we haven't scrolled past the threshold
+      if (Math.abs(lastScrollTop - currentScroll) <= 5) return;
+
+      if (currentScroll > lastScrollTop && currentScroll > scrollThreshold) {
+        // Scroll Down
+        nav.classList.add('header-hidden');
       } else {
-        nav.style.background = 'rgba(255, 255, 255, 0.1)';
-        nav.style.padding = '0';
-        nav.style.boxShadow = 'none';
+        // Scroll Up
+        nav.classList.remove('header-hidden');
       }
-    });
+      
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    }, { passive: true });
   }
 
 })();

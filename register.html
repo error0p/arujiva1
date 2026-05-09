@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Registration — SANGAMA 2026: International Integrated Oncology Symposium</title>
-  <meta name="description" content="Register for SANGAMA 2026: International Integrated Oncology Symposium — Karnataka's premier state-level symposium on integrative cancer care." />
+  <meta name="description"
+    content="Register for SANGAMA 2026: International Integrated Oncology Symposium — Karnataka's premier state-level symposium on integrative cancer care." />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -14,42 +16,49 @@
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="register.css" />
 </head>
+
 <body>
 
-  <!-- ═══════════ TOP NAV ═══════════ -->
-  <section class="w-full backdrop-blur-md font-inter font-sans border-b border-white/10 z-50 sticky top-0" style="background: rgba(44, 44, 44, 0.8);">
-    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4" aria-label="Main navigation">
-      <div class="flex items-center gap-4">
-        <a href="index.html" class="flex items-center gap-2" aria-label="Home">
-          <img src="sangama-logo-transparent.png" alt="SANGAMA Logo" class="h-20 w-auto object-contain">
-        </a>
-      </div>
-      <div class="flex items-center gap-4">
-        <a href="index.html" class="btn-nav-back" id="btn-back">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-          <span>Back to Home</span>
-        </a>
-      </div>
-    </nav>
-  </section>
+  <!-- ATARAXIS Style Header -->
+  <nav class="ataraxis-header">
+    <a href="index.html" class="header-logo">
+      <img src="sangama-logo-v2.png" alt="SANGAMA 2026 Logo" style="height: 60px; width: auto;" />
+    </a>
+
+    <ul class="header-links">
+      <li><a href="index.html">Homepage</a></li>
+      <li><a href="index.html#about-sangama">About</a></li>
+      <li><a href="index.html#committee">Committee</a></li>
+      <li><a href="index.html#schedule">Schedule</a></li>
+    </ul>
+
+    <div class="header-actions">
+      <a href="abstract.html" class="btn-nav btn-nav-outline">
+        <span>Submit Abstract</span>
+      </a>
+      <a href="register.html" class="btn-nav btn-nav-primary">
+        <span>Register Now</span>
+      </a>
+    </div>
+  </nav>
 
   <!-- ═══════════ PAGE HEADER ═══════════ -->
   <section class="page-hero relative overflow-hidden" id="page-hero">
     <div class="video-container" style="position: absolute; inset: 0; overflow: hidden; z-index: 0;">
-      <iframe 
-        src="https://www.youtube.com/embed/JFzJr7Wn8B4?autoplay=1&mute=1&loop=1&playlist=JFzJr7Wn8B4&controls=0&showinfo=0&rel=0&disablekb=1&modestbranding=1&iv_load_policy=3" 
-        frameborder="0" 
-        allow="autoplay; encrypted-media" 
+      <iframe
+        src="https://www.youtube.com/embed/JFzJr7Wn8B4?autoplay=1&mute=1&loop=1&playlist=JFzJr7Wn8B4&controls=0&showinfo=0&rel=0&disablekb=1&modestbranding=1&iv_load_policy=3"
+        frameborder="0" allow="autoplay; encrypted-media"
         style="width: 100vw; height: 56.25vw; min-height: 100vh; min-width: 177.77vh; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;">
       </iframe>
     </div>
     <!-- Overlay to ensure text readability -->
     <div style="position: absolute; inset: 0; background: rgba(7, 34, 74, 0.45); z-index: 0;"></div>
-    
+
     <div class="page-hero-inner" style="position: relative; z-index: 1;">
       <span class="page-label">SANGAMA 2026: International Integrated Oncology Symposium</span>
       <h1 class="page-title">Registration</h1>
-      <p class="page-subtitle">Complete the form below to secure your spot at Karnataka's premier integrative oncology symposium.</p>
+      <p class="page-subtitle">Complete the form below to secure your spot at Karnataka's premier integrative oncology
+        symposium.</p>
     </div>
   </section>
 
@@ -91,7 +100,8 @@
             <div class="field-row">
               <div class="field" id="f-institution">
                 <label for="institution">Institution / Affiliation <span class="req">*</span></label>
-                <input type="text" id="institution" name="institution" placeholder="College / Hospital / Practice name" required />
+                <input type="text" id="institution" name="institution" placeholder="College / Hospital / Practice name"
+                  required />
                 <span class="err">Please enter your institution</span>
               </div>
               <div class="field" id="f-city">
@@ -137,7 +147,8 @@
             <div class="field-row">
               <div class="field" id="f-council-reg">
                 <label for="council-reg">Council Registration Number <span class="req">*</span></label>
-                <input type="text" id="council-reg" name="councilReg" placeholder="MCI/DCI/AYUSH Council No." required />
+                <input type="text" id="council-reg" name="councilReg" placeholder="MCI/DCI/AYUSH Council No."
+                  required />
                 <span class="err">Mandatory for practitioners</span>
               </div>
               <div class="field" id="f-council-name">
@@ -180,8 +191,11 @@
                 </label>
               </div>
               <p class="field-hint" id="abstract-hint" style="display:none;">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                Please submit your abstract via the <a href="abstract.html" target="_blank">Abstract Submission page</a>.
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3" />
+                </svg>
+                Please submit your abstract via the <a href="abstract.html" target="_blank">Abstract Submission
+                  page</a>.
               </p>
               <span class="err">Please select an option</span>
             </div>
@@ -242,12 +256,14 @@
         <div class="success-card" id="success-card">
           <div class="success-icon">
             <svg viewBox="0 0 24 24" fill="none">
-              <circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.5" opacity="0.2"/>
-              <polyline class="check-path" points="7 12 10.5 15.5 17 9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              <circle cx="12" cy="12" r="11" stroke="currentColor" stroke-width="1.5" opacity="0.2" />
+              <polyline class="check-path" points="7 12 10.5 15.5 17 9" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" fill="none" />
             </svg>
           </div>
           <h3>Registration Submitted!</h3>
-          <p>Thank you for registering for <strong>SANGAMA 2026: International Integrated Oncology Symposium</strong>. A confirmation email will be sent to your registered email address shortly.</p>
+          <p>Thank you for registering for <strong>SANGAMA 2026: International Integrated Oncology Symposium</strong>. A
+            confirmation email will be sent to your registered email address shortly.</p>
           <span class="ref-badge" id="ref-badge">REF: SGM-000000</span>
           <a href="index.html" class="btn btn-primary" style="margin-top:1.5rem;">
             <span>Back to Home</span>
@@ -257,56 +273,97 @@
     </div>
   </section>
 
-  <!-- ═══════════ FOOTER ═══════════ -->
-  <footer class="site-footer" id="site-footer">
+  <!-- ATARAXIS Style Footer -->
+  <footer class="ataraxis-footer">
+    <div class="footer-lines-bg">
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <path d="M0,200 L500,0 L1000,200" stroke="white" fill="none" opacity="0.1" />
+        <path d="M0,500 L500,300 L1000,500" stroke="white" fill="none" opacity="0.1" />
+        <path d="M0,800 L500,600 L1000,800" stroke="white" fill="none" opacity="0.1" />
+      </svg>
+    </div>
+
     <div class="footer-inner">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <img src="sangama-logo.png" alt="SANGAMA Logo" class="footer-logo-img">
-          <p class="footer-tagline">
-            <strong>SANGAMA 2026</strong> — Karnataka's premier integrated oncology symposium.<br/>
-            Uniting Wisdom. Advancing Care. Transforming Lives.
+      <div class="footer-main">
+        <div class="footer-left">
+          <div class="footer-logos-group">
+            <a href="index.html" class="footer-logo">
+              <img src="sangama-logo-v2.png" alt="SANGAMA 2026 Logo" style="height: 80px; width: auto;" />
+            </a>
+            <div class="ayush-footer-badge">
+              <img src="ayushexcil-logo.png" alt="Ayush Excil Logo"
+                style="height: 45px; width: auto; align-self: flex-start;" />
+              <p>Founding member of Ayush Excil</p>
+            </div>
+          </div>
+          <p style="margin-top: 1.5rem;">Empowering healthcare with advanced integrative oncology and research-driven
+            wellness models.</p>
+
+          <div class="social-links">
+            <a href="#" aria-label="X (Twitter)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.454C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+          </div>
+
+          <a href="#page-hero" class="back-to-top">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="18 15 12 9 6 15" />
+            </svg>
+            Back to top
+          </a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p style="font-size: 0.88rem; line-height: 1.6; margin-bottom: 1rem; color: rgba(255,255,255,0.7);">
+            <strong>Arujiva</strong>, A unit of Maanaveeya Kalyana Trust.<br>
+            Survey No 512/1A, Srinivas Saradgi,<br>
+            Kalaburagi, Karnataka 585102
           </p>
-          <p class="footer-tagline" style="margin-top: 1rem; opacity: 0.6; font-size: 0.8rem;">
-            A unit of Maanaveeya Kalyana Trust<br/>
-            Founding member of Ayush Excil
+          <p style="font-size: 0.88rem; color: rgba(255,255,255,0.7);">
+            <strong>Ph:</strong> 7411298555<br>
+            <strong>Email:</strong> <a href="mailto:reservations@arujiva.com"
+              style="color: var(--white); text-decoration: underline; text-underline-offset: 3px;">reservations@arujiva.com</a>
           </p>
         </div>
 
-        <div class="footer-contact">
-          <h4>Connect</h4>
-          <div class="contact-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>Survey No 512/1A, Srinivas Saradgi, Kalaburagi, 585102</span>
-          </div>
-          <div class="contact-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            <span><a href="tel:+917411297555">7411 297 555</a></span>
-          </div>
-          <div class="contact-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span><a href="mailto:reservations@sangamaconclave.com">Email Us</a></span>
-          </div>
-        </div>
-
-        <div class="footer-links">
-          <h4>Explore</h4>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Conference Schedule</a></li>
-            <li><a href="#">Speaker Profiles</a></li>
-            <li><a href="#">Travel & Stay</a></li>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="abstract.html">Abstract Submission</a></li>
+            <li><a href="register.html">Registration Portal</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Services</a></li>
           </ul>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>© 2026 SANGAMA. All rights reserved.</p>
-        <p>Holistically Crafted by <a href="https://aarts.in/" target="_blank">Aarts</a></p>
+      <div class="footer-copyright">
+        © 2025 Arujiva. All rights reserved.
       </div>
     </div>
   </footer>
 
   <script src="register.js"></script>
 </body>
+
 </html>

@@ -171,4 +171,23 @@
     reveals.forEach(el => el.classList.add('visible'));
   }
 
+  // ── Navbar hide-on-scroll ──
+  const nav = document.querySelector('.ataraxis-header');
+  let lastScrollTop = 0;
+  const scrollThreshold = 100;
+
+  if (nav) {
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      if (Math.abs(lastScrollTop - currentScroll) <= 5) return;
+
+      if (currentScroll > lastScrollTop && currentScroll > scrollThreshold) {
+        nav.classList.add('header-hidden');
+      } else {
+        nav.classList.remove('header-hidden');
+      }
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    }, { passive: true });
+  }
+
 })();

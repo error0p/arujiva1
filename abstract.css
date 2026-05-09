@@ -88,6 +88,25 @@
   border-bottom: 1px solid var(--cream-dark);
 }
 
+/* ── Opening Text ── */
+.opening-text {
+  font-size: 0.92rem;
+  color: var(--charcoal-light);
+  font-weight: 300;
+  line-height: 1.75;
+  margin-bottom: 1.75rem;
+}
+
+.section-sub-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--charcoal);
+  margin-bottom: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+/* ── Guidelines List ── */
 .guidelines-list {
   list-style: none;
   display: flex;
@@ -120,9 +139,278 @@
   font-weight: 700;
 }
 
+.guidelines-list li .bullet-check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(0, 230, 204, 0.12);
+  color: var(--sage);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
 .guidelines-list li strong {
   color: var(--charcoal);
   font-weight: 500;
+}
+
+/* ── HOD Download Banner ── */
+.hod-download-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: rgba(11, 58, 122, 0.05);
+  border: 1.5px solid rgba(11, 58, 122, 0.15);
+  border-radius: var(--radius-md);
+  padding: 1.2rem 1.5rem;
+  margin-top: 1.75rem;
+  flex-wrap: wrap;
+}
+
+.hod-download-inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--sage);
+  flex-shrink: 0;
+}
+
+.hod-download-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--charcoal);
+}
+
+.hod-download-sub {
+  font-size: 0.75rem;
+  color: var(--charcoal-light);
+  font-weight: 300;
+  margin-top: 0.1rem;
+}
+
+.hod-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1.2rem;
+  background: var(--sage-dark);
+  color: var(--white);
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+
+.hod-download-btn:hover {
+  background: var(--sage);
+  transform: translateY(-1px);
+}
+
+/* ── Info Tables (Formats, Dates) ── */
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.info-table thead tr {
+  background: rgba(11, 58, 122, 0.05);
+}
+
+.info-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--charcoal-light);
+  border-bottom: 2px solid var(--cream-dark);
+}
+
+.info-table td {
+  padding: 1rem;
+  color: var(--charcoal-light);
+  font-weight: 300;
+  line-height: 1.65;
+  border-bottom: 1px solid var(--cream-dark);
+  vertical-align: top;
+}
+
+.info-table td:first-child {
+  white-space: nowrap;
+  font-weight: 500;
+  color: var(--charcoal);
+  width: 220px;
+}
+
+.info-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.info-table tbody tr:hover td {
+  background: rgba(11, 58, 122, 0.02);
+}
+
+.info-table td strong {
+  color: var(--charcoal);
+  font-weight: 500;
+}
+
+/* ── Dates Table ── */
+.dates-table td:first-child {
+  width: 260px;
+}
+
+.date-cell {
+  font-weight: 400 !important;
+}
+
+.date-placeholder {
+  display: inline-block;
+  padding: 0.2rem 0.7rem;
+  background: rgba(0, 230, 204, 0.08);
+  border-radius: 50px;
+  font-size: 0.78rem;
+  color: var(--sage-dark);
+  font-weight: 500 !important;
+  font-style: italic;
+}
+
+.highlight-row td {
+  background: rgba(11, 58, 122, 0.03);
+}
+
+/* ── Prizes Table ── */
+.prizes-card .guidelines-card-title {
+  text-align: center;
+}
+
+.prize-disclaimer {
+  background: rgba(196, 74, 74, 0.06);
+  border: 1.5px solid rgba(196, 74, 74, 0.18);
+  border-radius: var(--radius-sm);
+  padding: 0.9rem 1.2rem;
+  font-size: 0.83rem;
+  color: var(--charcoal-light);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.prize-disclaimer strong {
+  color: var(--error);
+}
+
+.prizes-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.prizes-table thead tr {
+  background: rgba(11, 58, 122, 0.06);
+}
+
+.prizes-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--charcoal-light);
+  border-bottom: 2px solid var(--cream-dark);
+}
+
+.prizes-table td {
+  padding: 0.9rem 1rem;
+  color: var(--charcoal-light);
+  font-weight: 300;
+  border-bottom: 1px solid var(--cream-dark);
+  vertical-align: middle;
+}
+
+.prizes-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.prizes-table tbody tr:hover td {
+  background: rgba(11, 58, 122, 0.02);
+}
+
+.special-prize-row td {
+  background: rgba(0, 230, 204, 0.04);
+}
+
+.special-prize-row:hover td {
+  background: rgba(0, 230, 204, 0.07) !important;
+}
+
+.prize-amount {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  white-space: nowrap;
+}
+
+.highlight-prize {
+  color: var(--sage-dark) !important;
+}
+
+.pg-badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  background: rgba(11, 58, 122, 0.08);
+  color: var(--sage-dark);
+  border-radius: 50px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}
+
+.trophy {
+  display: inline-block;
+  padding: 0.2rem 0.7rem;
+  border-radius: 50px;
+  font-size: 0.73rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.trophy.gold   { background: rgba(212, 175, 55, 0.15); color: #9a7b1a; }
+.trophy.silver { background: rgba(169, 169, 169, 0.2); color: #6b6b6b; }
+.trophy.bronze { background: rgba(180, 110, 60, 0.15); color: #8b4513; }
+.trophy.special { background: rgba(0, 230, 204, 0.12); color: var(--sage-dark); }
+
+.prize-pool-total {
+  text-align: center;
+  padding: 1rem 1.5rem;
+  background: rgba(11, 58, 122, 0.06);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  color: var(--charcoal);
+  border: 1px solid rgba(11, 58, 122, 0.1);
+}
+
+.prize-note {
+  font-size: 0.78rem;
+  color: var(--charcoal-light);
+  font-weight: 300;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 0.8rem;
 }
 
 /* ── Presentation Types ── */
@@ -160,18 +448,123 @@
   font-weight: 300;
 }
 
-.ptype-card:hover {
-  border-color: var(--sage-light);
-}
+.ptype-card:hover { border-color: var(--sage-light); }
 
-.ptype-card input:checked + .pt-inner,
 .ptype-card:has(input:checked) {
   border-color: var(--sage);
   background: rgba(11, 58, 122, 0.04);
 }
 
-.ptype-card:has(input:checked) .pt-title {
-  color: var(--sage-dark);
+.ptype-card:has(input:checked) .pt-title { color: var(--sage-dark); }
+
+/* ── Category Cards (PG / Faculty) ── */
+.category-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+}
+
+.category-card {
+  background: var(--cream);
+  border: 2px solid transparent;
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  cursor: pointer;
+  display: block;
+  transition: all var(--transition);
+}
+
+.category-card input { display: none; }
+
+.cat-title {
+  display: block;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--charcoal);
+  margin-bottom: 0.2rem;
+}
+
+.cat-desc {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--charcoal-light);
+  font-weight: 300;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.cat-badge {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border-radius: 50px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.cat-badge.prize-eligible  { background: rgba(0, 180, 80, 0.1); color: #1a7a3a; }
+.cat-badge.not-eligible    { background: rgba(196, 74, 74, 0.08); color: var(--error); }
+
+.category-card:hover { border-color: var(--sage-light); }
+
+.category-card:has(input:checked) {
+  border-color: var(--sage);
+  background: rgba(11, 58, 122, 0.04);
+}
+
+.category-card:has(input:checked) .cat-title { color: var(--sage-dark); }
+
+/* ── Radio Group ── */
+.radio-group {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.88rem;
+  color: var(--charcoal-light);
+  font-weight: 300;
+  transition: color var(--transition);
+}
+
+.radio-option input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--sage-dark);
+  cursor: pointer;
+}
+
+.radio-option:has(input:checked) {
+  color: var(--charcoal);
+  font-weight: 500;
+}
+
+/* ── HOD Required Tag ── */
+.pg-required-tag {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  background: rgba(196, 74, 74, 0.08);
+  color: var(--error);
+  border-radius: 50px;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+/* ── Conditional Blocks ── */
+.conditional-block {
+  animation: fadeUp 0.3s ease;
 }
 
 /* ── Abstract Form ── */
@@ -210,7 +603,7 @@
   resize: vertical;
   transition: all var(--transition);
   line-height: 1.7;
-  min-height: 180px;
+  min-height: 100px;
 }
 
 .field textarea::placeholder {
@@ -292,56 +685,42 @@
 
 .file-name-badge.show { display: inline-block; }
 
-/* ── Authors / Co-authors ── */
-.author-rows { display: flex; flex-direction: column; gap: 0.6rem; }
-
-.author-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr auto;
-  gap: 0.6rem;
-  align-items: end;
+/* ── Contact Queries Card ── */
+.contact-queries-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 2rem 2.5rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--cream-dark);
 }
 
-.btn-add-author,
-.btn-remove-author {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem 0.8rem;
-  font-size: 0.75rem;
+.contact-queries-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
   font-weight: 500;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  transition: all var(--transition);
-  border: none;
-  font-family: var(--font-body);
+  color: var(--charcoal);
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--cream-dark);
 }
 
-.btn-add-author {
-  background: rgba(11, 58, 122, 0.08);
-  color: var(--sage-dark);
-  margin-top: 0.6rem;
-  gap: 0.4rem;
-  padding: 0.55rem 1.2rem;
+.contact-queries-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem 2rem;
 }
 
-.btn-add-author:hover {
-  background: rgba(11, 58, 122, 0.14);
-  transform: translateY(-1px);
+.cq-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  color: var(--charcoal-light);
+  font-weight: 300;
 }
 
-.btn-remove-author {
-  width: 34px;
-  height: 34px;
-  background: rgba(196, 74, 74, 0.07);
-  color: var(--error);
-  border-radius: var(--radius-sm);
-  padding: 0;
-  align-self: end;
-  margin-bottom: 1.3rem;
-}
-
-.btn-remove-author:hover { background: rgba(196, 74, 74, 0.14); }
+.cq-item svg { color: var(--sage); flex-shrink: 0; }
+.cq-item a { color: var(--sage-dark); text-decoration: underline; text-underline-offset: 2px; }
 
 /* ── Submission Success ── */
 .abstract-success-card {
@@ -375,21 +754,29 @@
   color: var(--charcoal-light);
   font-weight: 300;
   line-height: 1.7;
-  max-width: 480px;
+  max-width: 520px;
   margin: 0 auto 1.5rem;
 }
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
-  .info-cards-grid { grid-template-columns: 1fr; }
-  .presentation-types { grid-template-columns: 1fr; }
-  .guidelines-card { padding: 1.5rem; }
-  .author-row { grid-template-columns: 1fr; }
-  .btn-remove-author { width: 100%; height: 36px; margin-bottom: 0; }
+  .info-cards-grid       { grid-template-columns: 1fr; }
+  .presentation-types    { grid-template-columns: 1fr; }
+  .category-cards        { grid-template-columns: 1fr; }
+  .guidelines-card       { padding: 1.5rem; }
+  .prizes-table          { font-size: 0.78rem; }
+  .prizes-table td:first-child,
+  .info-table td:first-child { width: auto; }
+  .hod-download-banner   { flex-direction: column; align-items: flex-start; }
+  .contact-queries-grid  { flex-direction: column; }
 }
 
 @media (max-width: 480px) {
-  .guidelines-card { padding: 1.2rem; }
+  .guidelines-card    { padding: 1.2rem; }
+  .prizes-table th,
+  .prizes-table td    { padding: 0.6rem 0.5rem; }
+  .info-table th,
+  .info-table td      { padding: 0.6rem 0.5rem; }
 }
 
 /* ── Keyframes ── */

@@ -4,114 +4,111 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ── Word Counter ── */
-  const abstractBody  = document.getElementById('abstract-body');
-  const charCounter   = document.getElementById('char-counter');
-  const MAX_WORDS     = 300;
+  /* ── Title Character Counter ── */
+  const abstractTitle      = document.getElementById('abstract-title');
+  const titleCharCounter   = document.getElementById('title-char-counter');
+  const MAX_TITLE_CHARS    = 150;
 
-  function countWords(text) {
-    return text.trim() === '' ? 0 : text.trim().split(/\s+/).length;
-  }
-
-  if (abstractBody && charCounter) {
-    abstractBody.addEventListener('input', () => {
-      const words = countWords(abstractBody.value);
-      charCounter.textContent = `${words} / ${MAX_WORDS} words`;
-      charCounter.classList.remove('warn', 'over');
-      if (words > MAX_WORDS)      charCounter.classList.add('over');
-      else if (words > MAX_WORDS * 0.85) charCounter.classList.add('warn');
+  if (abstractTitle && titleCharCounter) {
+    abstractTitle.addEventListener('input', () => {
+      const len = abstractTitle.value.length;
+      titleCharCounter.textContent = `${len} / ${MAX_TITLE_CHARS} characters`;
+      titleCharCounter.classList.remove('warn', 'over');
+      if (len >= MAX_TITLE_CHARS)           titleCharCounter.classList.add('over');
+      else if (len >= MAX_TITLE_CHARS * 0.85) titleCharCounter.classList.add('warn');
     });
   }
 
-  /* ── Co-Author Rows ── */
-  const authorRowsEl  = document.getElementById('author-rows');
-  const btnAddAuthor  = document.getElementById('btn-add-author');
-  let authorCount     = 0;
+  /* ── Presenter Category → show/hide HOD Letter block ── */
+  const categoryRadios   = document.querySelectorAll('input[name="presenterCategory"]');
+  const hodLetterBlock   = document.getElementById('hod-letter-block');
 
-  function createAuthorRow() {
-    authorCount++;
-    const row = document.createElement('div');
-    row.className = 'author-row';
-    row.id = `author-row-${authorCount}`;
-    row.innerHTML = `
-      <div class="field">
-        <label>Co-Author ${authorCount} Name</label>
-        <input type="text" name="coAuthorName${authorCount}" placeholder="Full name" />
-      </div>
-      <div class="field">
-        <label>Institution</label>
-        <input type="text" name="coAuthorInst${authorCount}" placeholder="Institution / Hospital" />
-      </div>
-      <button type="button" class="btn-remove-author" title="Remove" data-row="author-row-${authorCount}">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-        </svg>
-      </button>
-    `;
-    authorRowsEl.appendChild(row);
-
-    row.querySelector('.btn-remove-author').addEventListener('click', (e) => {
-      const rowId = e.currentTarget.dataset.row;
-      document.getElementById(rowId)?.remove();
-    });
-  }
-
-  if (btnAddAuthor) {
-    btnAddAuthor.addEventListener('click', () => {
-      if (authorCount < 6) createAuthorRow();
-      else alert('Maximum 6 co-authors allowed.');
-    });
-  }
-
-  /* ── File Upload ── */
-  const uploadArea    = document.getElementById('upload-area');
-  const fileInput     = document.getElementById('supporting-file');
-  const fileNameBadge = document.getElementById('file-name-badge');
-
-  if (fileInput && fileNameBadge) {
-    fileInput.addEventListener('change', () => {
-      const file = fileInput.files[0];
-      if (file) {
-        if (file.size > 5 * 1024 * 1024) {
-          alert('File size exceeds 5 MB. Please upload a smaller file.');
-          fileInput.value = '';
-          fileNameBadge.classList.remove('show');
-          return;
-        }
-        fileNameBadge.textContent = `📎 ${file.name}`;
-        fileNameBadge.classList.add('show');
+  categoryRadios.forEach(radio => {
+    radio.addEventListener('change', () => {
+      if (!hodLetterBlock) return;
+      if (radio.value === 'Postgraduate Student' && radio.checked) {
+        hodLetterBlock.style.display = 'block';
+      } else if (radio.value === 'Faculty' && radio.checked) {
+        hodLetterBlock.style.display = 'none';
+        const hodInput = document.getElementById('hod-letter');
+        if (hodInput) hodInput.value = '';
+        const badge = document.getElementById('hod-file-badge');
+        if (badge) { badge.textContent = 'No file chosen'; badge.classList.remove('show'); }
       }
     });
-  }
+  });
 
-  if (uploadArea) {
-    uploadArea.addEventListener('dragover', (e) => {
-      e.preventDefault();
-      uploadArea.classList.add('drag-over');
+  /* ── Ethics Approval → show/hide certificate upload ── */
+  const ethicsRadios     = document.querySelectorAll('input[name="ethicsApproval"]');
+  const ethicsCertBlock  = document.getElementById('ethics-cert-block');
+
+  ethicsRadios.forEach(radio => {
+    radio.addEventListener('change', () => {
+      if (!ethicsCertBlock) return;
+      ethicsCertBlock.style.display = (radio.value === 'Yes' && radio.checked) ? 'block' : 'none';
     });
-    uploadArea.addEventListener('dragleave', () => uploadArea.classList.remove('drag-over'));
-    uploadArea.addEventListener('drop', (e) => {
+  });
+
+  /* ── Previously Published → show/hide details textarea ── */
+  const prevPublishedRadios = document.querySelectorAll('input[name="prevPublished"]');
+  const prevDetailsBlock    = document.getElementById('prev-details-block');
+
+  prevPublishedRadios.forEach(radio => {
+    radio.addEventListener('change', () => {
+      if (!prevDetailsBlock) return;
+      prevDetailsBlock.style.display = (radio.value === 'Yes' && radio.checked) ? 'block' : 'none';
+    });
+  });
+
+  /* ── File Upload Handler Factory ── */
+  function setupFileUpload(areaId, inputId, badgeId, maxMB) {
+    const area  = document.getElementById(areaId);
+    const input = document.getElementById(inputId);
+    const badge = document.getElementById(badgeId);
+    if (!area || !input || !badge) return;
+
+    input.addEventListener('change', () => {
+      const file = input.files[0];
+      if (!file) return;
+      if (file.size > maxMB * 1024 * 1024) {
+        alert(`File size exceeds ${maxMB} MB. Please upload a smaller file.`);
+        input.value = '';
+        badge.textContent = 'No file chosen';
+        badge.classList.remove('show');
+        return;
+      }
+      badge.textContent = `📎 ${file.name}`;
+      badge.classList.add('show');
+    });
+
+    area.addEventListener('dragover', (e) => { e.preventDefault(); area.classList.add('drag-over'); });
+    area.addEventListener('dragleave', () => area.classList.remove('drag-over'));
+    area.addEventListener('drop', (e) => {
       e.preventDefault();
-      uploadArea.classList.remove('drag-over');
+      area.classList.remove('drag-over');
       if (e.dataTransfer.files.length) {
-        fileInput.files = e.dataTransfer.files;
-        fileInput.dispatchEvent(new Event('change'));
+        input.files = e.dataTransfer.files;
+        input.dispatchEvent(new Event('change'));
       }
     });
   }
 
-  /* ── Form Validation & Submit ── */
-  const form          = document.getElementById('abstract-form');
-  const btnSubmit     = document.getElementById('btn-abs-submit');
-  const successCard   = document.getElementById('abstract-success-card');
-  const formCard      = document.getElementById('form-card');
-  const absRefBadge   = document.getElementById('abs-ref-badge');
+  setupFileUpload('abstract-upload-area', 'abstract-file',      'abstract-file-badge', 2);
+  setupFileUpload('hod-upload-area',      'hod-letter',          'hod-file-badge',      2);
+  setupFileUpload('ethics-upload-area',   'ethics-certificate',  'ethics-file-badge',   2);
+
+  /* ── Form Validation ── */
+  const form        = document.getElementById('abstract-form');
+  const btnSubmit   = document.getElementById('btn-abs-submit');
+  const successCard = document.getElementById('abstract-success-card');
+  const formCard    = document.getElementById('form-card');
+  const absRefBadge = document.getElementById('abs-ref-badge');
 
   function showErr(fieldId, show) {
     const field = document.getElementById(fieldId);
     if (!field) return;
     const errEl = field.querySelector('.err');
-    const input = field.querySelector('input, select, textarea');
+    const input = field.querySelector('input:not([type="radio"]):not([type="checkbox"]):not([type="file"]), select, textarea');
     if (errEl) errEl.style.display = show ? 'block' : 'none';
     if (input) {
       if (show) input.classList.add('has-error');
@@ -119,18 +116,24 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  function showErrById(id, show) {
+    const el = document.getElementById(id);
+    if (el) el.style.display = show ? 'block' : 'none';
+  }
+
   function validate() {
     let valid = true;
 
+    /* Simple required text/email/select fields */
     const required = [
-      { id: 'f-presenter-name', field: 'presenter-name' },
-      { id: 'f-designation',    field: 'designation' },
-      { id: 'f-abs-email',      field: 'abs-email' },
-      { id: 'f-abs-mobile',     field: 'abs-mobile' },
-      { id: 'f-abs-institution',field: 'abs-institution' },
-      { id: 'f-abs-city',       field: 'abs-city' },
-      { id: 'f-abstract-title', field: 'abstract-title' },
-      { id: 'f-theme',          field: 'theme' },
+      { id: 'f-presenter-name',    field: 'presenter-name' },
+      { id: 'f-presenter-email',   field: 'presenter-email' },
+      { id: 'f-presenter-mobile',  field: 'presenter-mobile' },
+      { id: 'f-institution',       field: 'institution' },
+      { id: 'f-department',        field: 'department' },
+      { id: 'f-system-of-medicine',field: 'system-of-medicine' },
+      { id: 'f-abstract-title',    field: 'abstract-title' },
+      { id: 'f-topic-category',    field: 'topic-category' },
     ];
 
     required.forEach(({ id, field }) => {
@@ -140,44 +143,60 @@ document.addEventListener('DOMContentLoaded', () => {
       if (empty) valid = false;
     });
 
-    // Email format
-    const emailEl = document.getElementById('abs-email');
+    /* Email format */
+    const emailEl = document.getElementById('presenter-email');
     if (emailEl && emailEl.value.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailEl.value)) {
-      showErr('f-abs-email', true);
+      showErr('f-presenter-email', true);
       valid = false;
     }
 
-    // Abstract body & word count
-    const bodyEl = document.getElementById('abstract-body');
-    const words  = countWords(bodyEl?.value || '');
-    if (!bodyEl || !bodyEl.value.trim() || words > MAX_WORDS) {
-      showErr('f-abstract-body', true);
-      valid = false;
-    } else {
-      showErr('f-abstract-body', false);
-    }
+    /* Presenter Category */
+    const categorySelected = document.querySelector('input[name="presenterCategory"]:checked');
+    showErrById('category-err', !categorySelected);
+    if (!categorySelected) valid = false;
 
-    // Keywords
+    /* Presentation Type */
+    const ptypeSelected = document.querySelector('input[name="presentationType"]:checked');
+    showErrById('ptype-err', !ptypeSelected);
+    if (!ptypeSelected) valid = false;
+
+    /* Abstract file (mandatory) */
+    const abstractFile = document.getElementById('abstract-file');
+    const hasAbstractFile = abstractFile && abstractFile.files && abstractFile.files.length > 0;
+    showErrById('abstract-file-err', !hasAbstractFile);
+    if (!hasAbstractFile) valid = false;
+
+    /* Keywords (3–5) */
     const kwEl = document.getElementById('keywords');
     const kws  = (kwEl?.value || '').split(',').map(k => k.trim()).filter(Boolean);
-    if (kws.length < 3 || kws.length > 6) {
+    if (kws.length < 3 || kws.length > 5) {
       showErr('f-keywords', true);
       valid = false;
     } else {
       showErr('f-keywords', false);
     }
 
-    // Presentation type
-    const ptypeSelected = document.querySelector('input[name="presentationType"]:checked');
-    const ptypeErr = document.getElementById('ptype-err');
-    if (!ptypeSelected) {
-      if (ptypeErr) ptypeErr.style.display = 'block';
-      valid = false;
+    /* HOD Letter — required for PG students */
+    if (categorySelected && categorySelected.value === 'Postgraduate Student') {
+      const hodFile = document.getElementById('hod-letter');
+      const hasHod  = hodFile && hodFile.files && hodFile.files.length > 0;
+      showErrById('hod-err', !hasHod);
+      if (!hasHod) valid = false;
     } else {
-      if (ptypeErr) ptypeErr.style.display = 'none';
+      showErrById('hod-err', false);
     }
 
-    // Declaration
+    /* Ethics Approval */
+    const ethicsSelected = document.querySelector('input[name="ethicsApproval"]:checked');
+    showErrById('ethics-err', !ethicsSelected);
+    if (!ethicsSelected) valid = false;
+
+    /* Previously Published */
+    const prevSelected = document.querySelector('input[name="prevPublished"]:checked');
+    showErrById('prev-published-err', !prevSelected);
+    if (!prevSelected) valid = false;
+
+    /* Declaration */
     const declEl  = document.getElementById('declaration');
     const declErr = document.getElementById('decl-err');
     if (!declEl?.checked) {
@@ -193,9 +212,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (form && btnSubmit) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      if (!validate()) return;
+      if (!validate()) {
+        /* Scroll to first error */
+        const firstErr = form.querySelector('.err[style*="block"], .err:not([style])');
+        if (firstErr) firstErr.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
 
-      // Loading state
       btnSubmit.classList.add('loading');
       btnSubmit.disabled = true;
 
@@ -203,7 +226,6 @@ document.addEventListener('DOMContentLoaded', () => {
         btnSubmit.classList.remove('loading');
         btnSubmit.disabled = false;
 
-        // Show success
         form.style.display = 'none';
         successCard.classList.add('show');
 
@@ -214,9 +236,17 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 1800);
     });
 
-    // Live clear errors on change
+    /* Live clear errors on input */
     form.querySelectorAll('input, select, textarea').forEach(el => {
       el.addEventListener('input', () => {
+        const field = el.closest('.field');
+        if (field) {
+          el.classList.remove('has-error');
+          const errEl = field.querySelector('.err');
+          if (errEl) errEl.style.display = 'none';
+        }
+      });
+      el.addEventListener('change', () => {
         const field = el.closest('.field');
         if (field) {
           el.classList.remove('has-error');
@@ -239,6 +269,25 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }, { threshold: 0.1 });
     reveals.forEach(el => observer.observe(el));
+  }
+
+  /* ── Navbar hide-on-scroll ── */
+  const nav = document.querySelector('.ataraxis-header');
+  let lastScrollTop = 0;
+  const scrollThreshold = 100;
+
+  if (nav) {
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      if (Math.abs(lastScrollTop - currentScroll) <= 5) return;
+
+      if (currentScroll > lastScrollTop && currentScroll > scrollThreshold) {
+        nav.classList.add('header-hidden');
+      } else {
+        nav.classList.remove('header-hidden');
+      }
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    }, { passive: true });
   }
 
 });

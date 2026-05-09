@@ -30,88 +30,51 @@
       <div class="header-pattern"></div>
     </div>
 
-    <!-- Top Navbar -->
-    <section id="top-nav" class="w-full bg-white/10 backdrop-blur-md font-inter font-sans border-b border-white/20 z-50 absolute top-0 left-0 right-0">
-      <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4" aria-label="Main navigation">
-        <div class="flex items-center gap-4">
-          <a href="index.html" class="flex items-center gap-2" aria-label="Home">
-            <img src="sangama-logo-transparent.png" alt="SANGAMA Logo" class="h-20 w-auto object-contain">
-          </a>
-        </div>
+    <!-- ATARAXIS Style Header -->
+    <nav class="ataraxis-header">
+      <a href="index.html" class="header-logo">
+        <img src="sangama-logo-v2.png" alt="SANGAMA 2026 Logo" style="height: 60px; width: auto;" />
+      </a>
 
-        <div class="hidden md:flex items-center gap-4">
-          <a href="abstract.html" class="text-base text-white/90 hover:text-white transition-colors px-4 py-2 rounded-lg focus:outline-none focus:text-white">Submit Abstract</a>
-          <a href="https://www.arujiva.com" target="_blank" class="text-base text-white/90 hover:text-white transition-colors px-4 py-2 rounded-lg focus:outline-none focus:text-white">Learn More</a>
-          <a href="register.html" class="button button-item" id="btn-book-now" style="transform: scale(0.7); transform-origin: right center; margin-left: -1rem;">
-            <span class="button-bg">
-              <span class="button-bg-layers">
-                <span class="button-bg-layer button-bg-layer-1 -purple"></span>
-                <span class="button-bg-layer button-bg-layer-2 -turquoise"></span>
-                <span class="button-bg-layer button-bg-layer-3 -yellow"></span>
-              </span>
-            </span>
-            <span class="button-inner">
-              <span class="button-inner-static">Register Now</span>
-              <span class="button-inner-hover">Register Now</span>
-            </span>
-          </a>
-        </div>
-        <button type="button" class="md:hidden inline-flex items-center justify-center p-2 rounded-lg text-white/90 hover:text-white focus:outline-none focus:ring-2 focus:ring-white/50" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open main menu" id="mobile-menu-button">
-          <svg class="h-7 w-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </nav>
-      <div class="md:hidden" id="mobile-menu" hidden>
-        <div class="px-6 pb-6 flex flex-col gap-2">
+      <ul class="header-links">
+        <li><a href="index.html" class="active">Homepage</a></li>
+        <li><a href="index.html#about-sangama">About</a></li>
+        <li><a href="index.html#committee">Committee</a></li>
+        <li><a href="index.html#schedule">Schedule</a></li>
+      </ul>
 
-          <a href="https://www.arujiva.com" target="_blank" class="block text-base text-white/90 hover:text-white transition-colors py-2 rounded-lg focus:outline-none focus:text-white">Learn More</a>
-          <a href="register.html" class="block bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-indigo-700 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:ring-offset-2 mt-2 text-center">Get Started</a>
-        </div>
+      <div class="header-actions">
+        <a href="abstract.html" class="btn-nav btn-nav-outline">
+          <span>Submit Abstract</span>
+        </a>
+        <a href="register.html" class="btn-nav btn-nav-primary">
+          <span>Register Now</span>
+        </a>
       </div>
-      <script>
-        const menuBtn = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        if(menuBtn) {
-          menuBtn.addEventListener('click', function() {
-            const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
-            menuBtn.setAttribute('aria-expanded', !expanded);
-            mobileMenu.hidden = expanded;
-          });
-        }
-      </script>
-    </section>
+    </nav>
 
     <!-- Hero Content — left-aligned like Arujiva -->
     <div class="hero-content reveal" id="hero-content">
       <div class="hero-main">
         <h1 class="hero-heading">
-          Register for<br/>
-          <span class="hero-highlight">SANGAMA 2026:</span><br/>
-          International Integrated<br/>
-          Oncology Symposium
+          <span class="hero-highlight">SANGAMA 2026</span><br/>
+          <span class="hero-symposium">International Integrated Oncology Symposium</span>
         </h1>
 
-        <!-- CTA Buttons -->
-        <div class="hero-ctas" id="hero-ctas">
-          <a href="register.html" class="button button-item" id="cta-register">
-            <span class="button-bg">
-              <span class="button-bg-layers">
-                <span class="button-bg-layer button-bg-layer-1 -purple"></span>
-                <span class="button-bg-layer button-bg-layer-2 -turquoise"></span>
-                <span class="button-bg-layer button-bg-layer-3 -yellow"></span>
-              </span>
-            </span>
-            <span class="button-inner" style="display: flex; align-items: center; gap: 0.5rem;">
-              <span class="button-inner-static" style="display: flex; align-items: center; gap: 0.5rem;">Register Now <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-              <span class="button-inner-hover" style="display: flex; align-items: center; gap: 0.5rem;">Register Now <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-            </span>
-          </a>
-          <a href="https://www.arujiva.com" target="_blank" class="btn btn-outline" id="cta-learn-more">
-            <span>Learn More</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-          </a>
+        <div class="hero-venue-box">
+          <div class="venue-title">VENUE</div>
+          <div class="venue-item">
+            <span class="venue-day">Day 1</span>
+            <p>KHE Society MRMC hall, Kalaburagi, Karnataka</p>
+          </div>
+          <div class="venue-divider"></div>
+          <div class="venue-item">
+            <span class="venue-day">Day 2</span>
+            <p>Arujiva Ayurveda and Naturopathy Hospital, Kalaburagi, Karnataka</p>
+          </div>
         </div>
+
+
       </div>
     </div>
     
@@ -124,72 +87,431 @@
   </header>
 
   <!-- ═══════════ INFO / MIDDLE SECTION ═══════════ -->
-  <section class="info-section reveal" id="info-section">
+  <!-- ═══════════ ABOUT SYMPOSIUM ═══════════ -->
+  <section class="info-section reveal" id="about-sangama">
     <div class="info-container">
       <div class="info-grid">
         <div class="info-image">
           <img src="conclave-art.png" alt="SANGAMA Conclave Illustration" />
         </div>
         <div class="info-content">
-          <span class="info-label">About the Event</span>
-          <h2 class="info-heading">Register for SANGAMA 2026: International Integrated Oncology Symposium</h2>
+          <span class="info-label">About SANGAMA Symposium</span>
+          <h2 class="info-heading">A Global Confluence of Healing Wisdom</h2>
           <p class="info-text">
-            Join us at <strong>SANGAMA 2026: International Integrated Oncology Symposium</strong> — Karnataka's premier state-level symposium bringing together Ayurveda, Modern Oncology, Yoga, Naturopathy and integrative cancer care. Two days of keynote lectures, research presentations, methodology workshops, and networking with leading experts.
+            SANGAMA (confluence) is envisioned as a first-of-its-kind international platform that brings together global leaders across Modern Oncology, Ayurveda, Yoga, Naturopathy, and Integrative Medicine to advance a unified, evidence-based approach to cancer care.
           </p>
+          <p class="info-text">
+            This two-day summit will convene leading oncologists, national experts, and academic institutions, along with <strong>200+ high-potential postgraduate researchers</strong> from across India and the globe. 
+          </p>
+          <p class="info-text">
+            The program is designed as a capacity-building and policy-informing platform, positioning India at the forefront of integrative oncology innovation and research leadership.
+          </p>
+          
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <div>
+                <strong>High-impact Keynotes</strong>
+                <p>By national & international leaders in oncology and integrative medicine.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/><line x1="17.5" y1="15" x2="9" y2="15"/></svg>
+              </div>
+              <div>
+                <strong>Research Presentations</strong>
+                <p>Peer-reviewed research to surface emerging evidence.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </div>
+              <div>
+                <strong>Methodology Workshops</strong>
+                <p>Strengthening India’s next generation of clinician-scientists.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══════════ FOOTER ═══════════ -->
-  <footer class="site-footer" id="site-footer">
+
+  <!-- ═══════════ ABOUT ARUJIVA ═══════════ -->
+  <section class="arujiva-section reveal" id="about-arujiva">
+    <div class="info-container">
+      <div class="arujiva-content">
+        <span class="info-label">About Arujiva Institution</span>
+        <h2 class="info-heading">Emerging Integrative Healthcare Leadership</h2>
+        <p class="info-text full-width">
+          Arujiva Ayurveda & Naturopathy Hospital — A unit of Maanaveeya Kalyana Trust — is a CSR activity and fast-evolving institute dedicated to Sahstrokt, integrative, and preventive healthcare. We focus on oncology support, chronic disease management, and research-driven wellness models.
+        </p>
+
+        <div class="strengths-grid">
+          <div class="strength-card">
+            <div class="strength-header">
+              <div class="strength-icon">🏥</div>
+              <h3>Clinical Collaborations</h3>
+            </div>
+            <p>Integrated cancer care pathways in collaboration with:</p>
+            <ul class="strength-list">
+              <li><strong>HCG Cancer Institute</strong>, Kalaburagi</li>
+              <li><strong>Kidwai Cancer Institute</strong>, Kalaburagi</li>
+            </ul>
+          </div>
+          <div class="strength-card">
+            <div class="strength-header">
+              <div class="strength-icon">🧠</div>
+              <h3>Strategic Associations</h3>
+            </div>
+            <p>Advancing geriatric and neurocognitive care with:</p>
+            <ul class="strength-list">
+              <li><strong>Dementia Society of India</strong></li>
+            </ul>
+          </div>
+          <div class="strength-card">
+            <div class="strength-header">
+              <div class="strength-icon">🏛️</div>
+              <h3>National Compliance</h3>
+            </div>
+            <p>Reinforcing standards and global ecosystems:</p>
+            <ul class="strength-list">
+              <li>Founder member of <strong>Ayush Excel</strong></li>
+              <li>Impaneled under <strong>Ministry of AYUSH</strong></li>
+            </ul>
+            <div class="strength-logos">
+              <img src="ayushexcil-logo-transparent.png" alt="Ayush Excel" />
+              <img src="ministry-ayush-logo-transparent.png" alt="Ministry of AYUSH" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ORGANIZING COMMITTEE ═══════════ -->
+  <section class="info-section reveal" id="committee" style="background: var(--ata-cream-dark);">
+    <div class="info-container">
+      <span class="info-label" style="text-align: center; display: block;">Symposium Leadership</span>
+      <h2 class="info-heading" style="text-align: center; margin-bottom: 3rem;">Leadership & Committees</h2>
+
+      <!-- Chief Patrons -->
+      <div class="committee-subsection">
+        <h3 class="subsection-title">Chief Patrons</h3>
+        <div class="member-list">
+          <div class="member-item">
+            <span class="member-name">Maanaveeya Kalyana Trust</span>
+          </div>
+          <div class="member-item">
+            <span class="member-name">Dr. Shankar P S</span>
+          </div>
+          <div class="member-item">
+            <span class="member-name">Dr. H R Nagendra</span>
+            <span class="member-position">President, SVYASA University</span>
+          </div>
+          <div class="member-item">
+            <span class="member-name">Dr. Vaishali Sardeshmukh</span>
+            <span class="member-position">Director, ICRTC</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Executive Leadership -->
+      <div class="committee-subsection">
+        <h3 class="subsection-title">Executive Leadership</h3>
+        <div class="member-list">
+          <div class="member-item">
+            <span class="member-name">Dr. Vijay Kumar</span>
+            <span class="member-position">President</span>
+          </div>
+          <div class="member-item">
+            <span class="member-name">Dr. Rekha</span>
+            <span class="member-position">Organizing Chairman | Director, Arujiva</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Advisors -->
+      <div class="committee-subsection">
+        <h3 class="subsection-title">Advisory Board</h3>
+        <div class="member-list">
+          <div class="member-item">
+            <span class="member-name">Dr. Raghvendra Rao</span>
+            <span class="member-position">VP, HCG Bengaluru</span>
+          </div>
+          <div class="member-item">
+            <span class="member-name">Dr. Prasanna N. Rao</span>
+            <span class="member-position">Director, SDM Education Trust, Hassan</span>
+          </div>
+          <div class="member-item">
+            <span class="member-name">Dr. Shanthaling Nigudi</span>
+            <span class="member-position">Medical Superintendent, HCG, Kalaburagi</span>
+          </div>
+          <div class="member-item">
+            <span class="member-name">Dr. Gururaj Deshpande</span>
+            <span class="member-position">Director, KIDWAI Cancer Institute, Kalaburagi</span>
+          </div>
+          <div class="member-item">
+            <span class="member-name">Dr. Suhas Shetty</span>
+            <span class="member-position">Principal, KLE Ayurveda College, Belgaum</span>
+          </div>
+          <div class="member-item">
+            <span class="member-name">Dr. Allam Prabhu</span>
+            <span class="member-position">Director, NCISM, New Delhi</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Organizing Team -->
+      <div class="committee-subsection">
+        <h3 class="subsection-title">Organizing Team</h3>
+        <div class="committee-grid">
+        <div class="committee-card">
+          <span class="committee-role">Shiv Mati</span>
+          <h3 class="committee-name">Sri L S Patil</h3>
+        </div>
+        <div class="committee-card">
+          <span class="committee-role">Shakti Mati</span>
+          <h3 class="committee-name">Smt. Padmaja S Patil</h3>
+        </div>
+        <div class="committee-card">
+          <span class="committee-role">Ram Mati</span>
+          <h3 class="committee-name">Dr. Koustubha Dhumal</h3>
+        </div>
+        <div class="committee-card">
+          <span class="committee-role">Lakhan Mati</span>
+          <h3 class="committee-name">Mr. Chandrashekhar</h3>
+        </div>
+        <div class="committee-card">
+          <span class="committee-role">Hanu Mati</span>
+          <h3 class="committee-name">Prof. Dr. Shalin Bharati</h3>
+        </div>
+        <div class="committee-card">
+          <span class="committee-role">Doot Mati</span>
+          <h3 class="committee-name">Dr. Sandeep Malgi</h3>
+        </div>
+        <div class="committee-card">
+          <span class="committee-role">Sarath Mati</span>
+          <h3 class="committee-name">Abhishek</h3>
+        </div>
+        <div class="committee-card">
+          <span class="committee-role">Dwara Mati</span>
+          <h3 class="committee-name">Laxmi</h3>
+        </div>
+        <div class="committee-card">
+          <span class="committee-role">Maharaj mati</span>
+          <h3 class="committee-name">Hemal</h3>
+        </div>
+        <div class="committee-card">
+          <span class="committee-role">Kuber Mati</span>
+          <h3 class="committee-name">Mr. Ravi</h3>
+        </div>
+        <div class="committee-card">
+          <span class="committee-role">Sanskruti Sabha</span>
+          <h3 class="committee-name">Mr. Sandeep Malgi</h3>
+        </div>
+        </div>
+      </div>
+
+      <!-- Scientific Committee -->
+      <div class="committee-subsection">
+        <h3 class="subsection-title">Scientific Committee</h3>
+        <div class="member-list">
+          <div class="member-item">
+            <span class="member-name">Dr. Rajshekhar Patil</span>
+            <span class="member-position">Chairman</span>
+          </div>
+          <div class="member-item">
+            <span class="member-name">Dr. Gururaj Anakeri</span>
+            <span class="member-position">Co-Chairman</span>
+          </div>
+        </div>
+        <h4 style="margin-top: 2rem; color: var(--ata-gold); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em;">Scholars & Scientists</h4>
+        <div class="member-list" style="margin-top: 1rem;">
+          <div class="member-item">
+            <span class="member-name">Dr. Boworn Klolgnio</span>
+            <span class="member-position">Thailand</span>
+          </div>
+          <div class="member-item">
+            <span class="member-name">Dr. Santosh Patil</span>
+            <span class="member-position">HOD, KLE Ayurveda College</span>
+          </div>
+          <div class="member-item">
+            <span class="member-name">Dr. Andreak</span>
+            <span class="member-position">Scientist, Onco Research Lab, Switzerland | WHO</span>
+          </div>
+          <div class="member-item">
+            <span class="member-name">Dr. Manjunath Sharma</span>
+            <span class="member-position">VC, SVYASA</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chairpersons & Speakers -->
+      <div class="committee-subsection">
+        <h3 class="subsection-title">Chairpersons</h3>
+        <div class="member-list">
+          <div class="member-item"><span class="member-name">Dr. Jyoti Kode</span><span class="member-position">TATA Memorial</span></div>
+          <div class="member-item"><span class="member-name">Dr. Amit Joshi</span><span class="member-position">TATA Memorial</span></div>
+          <div class="member-item"><span class="member-name">Dr. Vikram Gota</span><span class="member-position">TATA Memorial</span></div>
+          <div class="member-item"><span class="member-name">Dr. Kumarswamy</span><span class="member-position">HCG, Bengaluru</span></div>
+          <div class="member-item"><span class="member-name">Dr. Radheshyam</span><span class="member-position">HCG, Bengaluru</span></div>
+        </div>
+      </div>
+
+      <div class="committee-subsection">
+        <h3 class="subsection-title">Keynote Speakers</h3>
+        <div class="member-list">
+          <div class="member-item"><span class="member-name">Dr. Avinash Kadam</span><span class="member-position">Rasayu Pune</span></div>
+          <div class="member-item"><span class="member-name">Dr. Vitthal Huddar</span><span class="member-position">AIIA GOA</span></div>
+          <div class="member-item"><span class="member-name">Dr. Imbraj</span><span class="member-position">Kerala</span></div>
+          <div class="member-item"><span class="member-name">Dr. Wadi</span><span class="member-position">Kerala</span></div>
+          <div class="member-item"><span class="member-name">Dr. Zankhana Buch</span><span class="member-position">Apollo Ayurvaid, Bengaluru</span></div>
+          <div class="member-item"><span class="member-name">Dr. Pradeep</span><span class="member-position">Miracle, Coimbatore</span></div>
+          <div class="member-item"><span class="member-name">Dr. Madhu</span><span class="member-position">Kerala</span></div>
+          <div class="member-item"><span class="member-name">Dr. Yogeshwar Chippa</span><span class="member-position">Sri Sri Ayurveda</span></div>
+          <div class="member-item"><span class="member-name">Dr. Satynarayan Bhatt</span><span class="member-position">Muniyal Ayurveda College, Manipal</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SYMPOSIUM SCHEDULE ═══════════ -->
+  <section class="schedule-section reveal" id="schedule">
+    <div class="info-container">
+      <span class="info-label" style="text-align: center; display: block;">Event Timeline</span>
+      <h2 class="info-heading" style="text-align: center;">Symposium Schedule</h2>
+
+      <div class="schedule-grid">
+        <!-- Day 1 -->
+        <div class="schedule-day">
+          <div class="day-header">
+            <span class="day-number">DAY 01</span>
+            <div class="day-location">MRMC Facility Hall, Kalaburagi</div>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-content"><h4>Inauguration</h4></div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content"><h4>Lunch Break</h4></div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content"><h4>Paper Presentation</h4><p style="font-size: 0.85rem; color: var(--ata-text-light);">3 Parallel Sessions</p></div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content"><h4>Dinner</h4></div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content"><h4>Cultural Evening</h4></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="schedule-day">
+          <div class="day-header">
+            <span class="day-number">DAY 02</span>
+            <div class="day-location">Arujiva Ayurveda & Naturopathy Hospital</div>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-content"><h4>Paper Presentation</h4><p style="font-size: 0.85rem; color: var(--ata-text-light);">Morning Sessions</p></div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content"><h4>Lunch Break</h4></div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content"><h4>Paper Presentation</h4><p style="font-size: 0.85rem; color: var(--ata-text-light);">Afternoon Sessions</p></div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content"><h4>Valedictory Ceremony</h4></div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content"><h4>High Tea</h4></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATARAXIS Style Footer -->
+  <footer class="ataraxis-footer">
+    <div class="footer-lines-bg">
+      <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+        <path d="M0,200 L500,0 L1000,200" stroke="white" fill="none" opacity="0.1" />
+        <path d="M0,500 L500,300 L1000,500" stroke="white" fill="none" opacity="0.1" />
+        <path d="M0,800 L500,600 L1000,800" stroke="white" fill="none" opacity="0.1" />
+      </svg>
+    </div>
+
     <div class="footer-inner">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="#" class="footer-logo-link">
-            <img src="sangama-logo-v2.png" alt="SANGAMA Logo" class="footer-logo-img">
+      <div class="footer-main">
+        <div class="footer-left">
+          <div class="footer-logos-group">
+            <a href="index.html" class="footer-logo">
+              <img src="sangama-logo-v2.png" alt="SANGAMA 2026 Logo" style="height: 80px; width: auto;" />
+            </a>
+            <div class="ayush-footer-badge">
+              <img src="ayushexcil-logo.png" alt="Ayush Excil Logo" style="height: 45px; width: auto; align-self: flex-start;" />
+              <p>Founding member of Ayush Excil</p>
+            </div>
+          </div>
+          <p style="margin-top: 1.5rem;">Empowering healthcare with advanced integrative oncology and research-driven wellness models.</p>
+          
+          <div class="social-links">
+            <a href="#" aria-label="X (Twitter)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.454C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+
+          <a href="#site-header" class="back-to-top">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="18 15 12 9 6 15"/>
+            </svg>
+            Back to top
           </a>
-          <p class="footer-tagline">
-            <strong>SANGAMA 2026</strong> — Karnataka's premier integrated oncology symposium.<br/>
-            Uniting Wisdom. Advancing Care. Transforming Lives.
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p style="font-size: 0.88rem; line-height: 1.6; margin-bottom: 1rem; color: rgba(255,255,255,0.7);">
+            <strong>Arujiva</strong>, A unit of Maanaveeya Kalyana Trust.<br>
+            Survey No 512/1A, Srinivas Saradgi,<br>
+            Kalaburagi, Karnataka 585102
           </p>
-          <p class="footer-tagline" style="margin-top: 1rem; opacity: 0.6; font-size: 0.8rem;">
-            A unit of Maanaveeya Kalyana Trust<br/>
-            Founding member of Ayush Excil
+          <p style="font-size: 0.88rem; color: rgba(255,255,255,0.7);">
+            <strong>Ph:</strong> 7411298555<br>
+            <strong>Email:</strong> <a href="mailto:reservations@arujiva.com" style="color: var(--white); text-decoration: underline; text-underline-offset: 3px;">reservations@arujiva.com</a>
           </p>
         </div>
 
-        <div class="footer-contact">
-          <h4>Connect</h4>
-          <div class="contact-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>Survey No 512/1A, Srinivas Saradgi, Kalaburagi, 585102</span>
-          </div>
-          <div class="contact-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.11 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-            <span><a href="tel:+917411297555">7411 297 555</a></span>
-          </div>
-          <div class="contact-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span><a href="mailto:reservations@sangamaconclave.com">Email Us</a></span>
-          </div>
-        </div>
-
-        <div class="footer-links">
-          <h4>Explore</h4>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
           <ul>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="abstract.html">Submit Abstract</a></li>
-            <li><a href="#">Conference Schedule</a></li>
-            <li><a href="#">Speaker Profiles</a></li>
-            <li><a href="#">Travel & Stay</a></li>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="abstract.html">Abstract Submission</a></li>
+            <li><a href="register.html">Registration Portal</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Services</a></li>
           </ul>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>© 2026 SANGAMA. All rights reserved.</p>
-        <p>Holistically Crafted by <a href="https://aarts.in/" target="_blank">Aarts</a></p>
+      <div class="footer-copyright">
+        © 2025 Arujiva. All rights reserved.
       </div>
     </div>
   </footer>
