@@ -1,0 +1,1438 @@
+<!DOCTYPE html> <html lang="en-US">
+            
+        <script src="https://www.kleayurworld.edu.in/wp-content/themes/education-hub/js/table.js"></script>
+<head>
+	    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="https://www.kleayurworld.edu.in/xmlrpc.php">
+    
+<title>Page not found &#8211; KLE-AYUR-WORLD</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//netdna.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="KLE-AYUR-WORLD &raquo; Feed" href="https://www.kleayurworld.edu.in/feed/" />
+<link rel="alternate" type="application/rss+xml" title="KLE-AYUR-WORLD &raquo; Comments Feed" href="https://www.kleayurworld.edu.in/comments/feed/" />
+		<!-- This site uses the Google Analytics by ExactMetrics plugin v7.12.1 - Using Analytics tracking - https://www.exactmetrics.com/ -->
+							<script
+				src="//www.googletagmanager.com/gtag/js?id=UA-84225744-1"  data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var em_version = '7.12.1';
+				var em_track_user = true;
+				var em_no_track_reason = '';
+				
+								var disableStrs = [
+															'ga-disable-UA-84225744-1',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.ExactMetricsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (em_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+							
+														parameters.send_to = exactmetrics_frontend.ua;
+							__gtagDataLayer(type, name, parameters);
+													} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dNDMyYj': true,
+											});
+															__gtagTracker('config', 'UA-84225744-1', {"forceSSL":"true","page_path":'\/404.html?page=' + document.location.pathname + document.location.search + '&from=' + document.referrer} );
+										window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+				<!-- / Google Analytics by ExactMetrics -->
+		<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.kleayurworld.edu.in\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.10"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='pt-cv-public-style-css' href='https://www.kleayurworld.edu.in/wp-content/plugins/content-views-query-and-display-post-page/public/assets/css/cv.css?ver=2.5.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.kleayurworld.edu.in/wp-includes/css/dist/block-library/style.min.css?ver=6.1.10' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://www.kleayurworld.edu.in/wp-includes/css/classic-themes.min.css?ver=1' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='flexslider_style-css' href='https://www.kleayurworld.edu.in/wp-content/plugins/aparg-slider/css/flexslider.css?ver=6.1.10' type='text/css' media='all' />
+<link rel='stylesheet' id='flexslider_custom_style-css' href='https://www.kleayurworld.edu.in/wp-content/plugins/aparg-slider/css/flexsliderstyles.css?ver=6.1.10' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css' href='https://www.kleayurworld.edu.in/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='mk-skitter-css-css' href='https://www.kleayurworld.edu.in/wp-content/plugins/mk-slider/css/skitter.styles.css?ver=6.1.10' type='text/css' media='all' />
+<link rel='stylesheet' id='page-visit-counter-pro-css' href='https://www.kleayurworld.edu.in/wp-content/plugins/page-visit-counter/public/css/page-visit-counter-public.css?ver=6.0.4' type='text/css' media='all' />
+<link rel='stylesheet' id='t4bnewsticker-css' href='https://www.kleayurworld.edu.in/wp-content/plugins/t4b-news-ticker/assets/css/t4bnewsticker.css?ver=1.2.7' type='text/css' media='all' />
+<link rel='stylesheet' id='rt-fontawsome-css' href='https://www.kleayurworld.edu.in/wp-content/plugins/the-post-grid/assets/vendor/font-awesome/css/font-awesome.min.css?ver=6.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='rt-tpg-css' href='https://www.kleayurworld.edu.in/wp-content/plugins/the-post-grid/assets/css/thepostgrid.min.css?ver=6.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='SFSIPLUSmainCss-css' href='https://www.kleayurworld.edu.in/wp-content/plugins/ultimate-social-media-plus/css/sfsi-style.css?ver=3.5.7' type='text/css' media='all' />
+<link rel='stylesheet' id='testimonial-rotator-style-css' href='https://www.kleayurworld.edu.in/wp-content/plugins/testimonial-rotator/testimonial-rotator-style.css?ver=6.1.10' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css' href='//netdna.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css?ver=6.1.10' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-css' href='https://www.kleayurworld.edu.in/wp-content/themes/education-hub/third-party/font-awesome/css/font-awesome.min.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='education-hub-google-fonts-css' href='//fonts.googleapis.com/css?family=Open+Sans%3A600%2C400%2C400italic%2C300%2C100%2C700%7CMerriweather+Sans%3A400%2C700&#038;ver=6.1.10' type='text/css' media='all' />
+<link rel='stylesheet' id='education-hub-style-css' href='https://www.kleayurworld.edu.in/wp-content/themes/education-hub/style.css?ver=1.8' type='text/css' media='all' />
+<link rel='stylesheet' id='recent-posts-widget-with-thumbnails-public-style-css' href='https://www.kleayurworld.edu.in/wp-content/plugins/recent-posts-widget-with-thumbnails/public.css?ver=7.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/plugins/sticky-ad-bar/js/sab_bar_script.js?ver=6.1.10' id='sab_bar_script1-js'></script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/plugins/sticky-ad-bar/js/jquery.cookie.js?ver=6.1.10' id='sab_bar_script2-js'></script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/plugins/google-analytics-dashboard-for-wp/assets/js/frontend-gtag.min.js?ver=7.12.1' id='exactmetrics-frontend-script-js'></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id='exactmetrics-frontend-script-js-extra'>/* <![CDATA[ */
+var exactmetrics_frontend = {"js_events_tracking":"true","download_extensions":"zip,mp3,mpeg,pdf,docx,pptx,xlsx,rar","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/www.kleayurworld.edu.in","hash_tracking":"false","ua":"UA-84225744-1","v4_id":""};/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/plugins/post-grid/src/blocks/terms-list/front-scripts.js?ver=6.1.10' id='pgtermslist_front_script-js'></script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/plugins/aparg-slider/js/jquery.flexslider.js?ver=6.1.10' id='flexslider_scripts-js'></script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/plugins/aparg-slider/js/aparg-big-slider.js?ver=6.1.10' id='bigSlider_scripts-js'></script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/plugins/aparg-slider/js/jsvideourlparser.js?ver=6.1.10' id='youtube_scripts-js'></script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/plugins/flowpaper-lite-pdf-flipbook/assets/lity/lity.min.js' id='lity-js-js'></script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/plugins/mk-slider/js/jquery.easing.1.3.js?ver=6.1.10' id='jquery.easing.1.3-js'></script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/plugins/mk-slider/js/jquery.animate-colors-min.js?ver=6.1.10' id='jquery.animate-colors-min-js'></script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/plugins/mk-slider/js/jquery.skitter.min.js?ver=6.1.10' id='jquery.skitter.min-js'></script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/plugins/page-visit-counter/public/js/page-visit-counter-public.js?ver=6.0.4' id='page-visit-counter-pro-js'></script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/plugins/testimonial-rotator/js/jquery.cycletwo.js?ver=6.1.10' id='cycletwo-js'></script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/plugins/testimonial-rotator/js/jquery.cycletwo.addons.js?ver=6.1.10' id='cycletwo-addons-js'></script>
+<link rel="https://api.w.org/" href="https://www.kleayurworld.edu.in/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.kleayurworld.edu.in/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.kleayurworld.edu.in/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1.10" />
+		<style>
+			:root {
+				--tpg-primary-color: #0d6efd;
+				--tpg-secondary-color: #0654c4;
+				--tpg-primary-light: #c4d0ff
+			}
+
+					</style>
+
+			<script>
+		window.addEventListener("sfsi_plus_functions_loaded", function() {
+			var body = document.getElementsByTagName('body')[0];
+			// console.log(body);
+			body.classList.add("sfsi_plus_3.53");
+		})
+		// window.addEventListener('sfsi_plus_functions_loaded',function(e) {
+		// 	jQuery("body").addClass("sfsi_plus_3.53")
+		// });
+		jQuery(document).ready(function(e) {
+			jQuery("body").addClass("sfsi_plus_3.53")
+		});
+
+		function sfsi_plus_processfurther(ref) {
+			var feed_id = 'eC93YnpzR29vbThGaTlLSUcvaHAyekFMNVJhMHV1R3RpOHRlTG9JQ2pKeGRrTjF5aHAzOFNnQzNQc0cwODg3OUpIR3dPQnlDU2packtTNy8zTVp3bW51UEVSUkswaTdib1VwNE41VFUxNVhEL0lnalVtNkM5Z1B0cmZ0L3dqRUt8ZmZ0S0FNV3VadmRKbllBMU1SQVhQSFZUa3I3bEp5aGM5eEovU1hPRlJIcz0=';
+			var feedtype = 8;
+			var email = jQuery(ref).find('input[name="email"]').val();
+			var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+			if ((email != "Enter your email") && (filter.test(email))) {
+				if (feedtype == "8") {
+					var url = "https://api.follow.it/subscription-form/" + feed_id + "/" + feedtype;
+					window.open(url, "popupwindow", "scrollbars=yes,width=1080,height=760");
+					return true;
+				}
+			} else {
+				alert("Please enter email address");
+				jQuery(ref).find('input[name="email"]').focus();
+				return false;
+			}
+		}
+	</script>
+	<style>
+		.sfsi_plus_subscribe_Popinner {
+			width: 100% !important;
+			height: auto !important;
+			border: 1px solid #b5b5b5 !important;
+			padding: 18px 0px !important;
+			background-color: #ffffff !important;
+		}
+
+		.sfsi_plus_subscribe_Popinner form {
+			margin: 0 20px !important;
+		}
+
+		.sfsi_plus_subscribe_Popinner h5 {
+			font-family: Helvetica,Arial,sans-serif !important;
+
+			font-weight: bold !important;
+			color: #000000 !important;
+			font-size: 16px !important;
+			text-align: center !important;
+			margin: 0 0 10px !important;
+			padding: 0 !important;
+		}
+
+		.sfsi_plus_subscription_form_field {
+			margin: 5px 0 !important;
+			width: 100% !important;
+			display: inline-flex;
+			display: -webkit-inline-flex;
+		}
+
+		.sfsi_plus_subscription_form_field input {
+			width: 100% !important;
+			padding: 10px 0px !important;
+		}
+
+		.sfsi_plus_subscribe_Popinner input[type=email] {
+			font-family: Helvetica,Arial,sans-serif !important;
+
+			font-style: normal !important;
+			color: #000000 !important;
+			font-size: 14px !important;
+			text-align: center !important;
+		}
+
+		.sfsi_plus_subscribe_Popinner input[type=email]::-webkit-input-placeholder {
+			font-family: Helvetica,Arial,sans-serif !important;
+
+			font-style: normal !important;
+			color: #000000 !important;
+			font-size: 14px !important;
+			text-align: center !important;
+		}
+
+		.sfsi_plus_subscribe_Popinner input[type=email]:-moz-placeholder {
+			/* Firefox 18- */
+			font-family: Helvetica,Arial,sans-serif !important;
+
+			font-style: normal !important;
+			color: #000000 !important;
+			font-size: 14px !important;
+			text-align: center !important;
+		}
+
+		.sfsi_plus_subscribe_Popinner input[type=email]::-moz-placeholder {
+			/* Firefox 19+ */
+			font-family: Helvetica,Arial,sans-serif !important;
+
+			font-style: normal !important;
+			color: #000000 !important;
+			font-size: 14px !important;
+			text-align: center !important;
+		}
+
+		.sfsi_plus_subscribe_Popinner input[type=email]:-ms-input-placeholder {
+			font-family: Helvetica,Arial,sans-serif !important;
+
+			font-style: normal !important;
+			color: #000000 !important;
+			font-size: 14px !important;
+			text-align: center !important;
+		}
+
+		.sfsi_plus_subscribe_Popinner input[type=submit] {
+			font-family: Helvetica,Arial,sans-serif !important;
+
+			font-weight: bold !important;
+			color: #000000 !important;
+			font-size: 16px !important;
+			text-align: center !important;
+			background-color: #dedede !important;
+		}
+	</style>
+	<meta name="follow.it-verification-code-eC93YnpzR29vbThGaTlLSUcvaHAyekFMNVJhMHV1R3RpOHRlTG9JQ2pKeGRrTjF5aHAzOFNnQzNQc0cwODg3OUpIR3dPQnlDU2packtTNy8zTVp3bW51UEVSUkswaTdib1VwNE41VFUxNVhEL0lnalVtNkM5Z1B0cmZ0L3dqRUt8ZmZ0S0FNV3VadmRKbllBMU1SQVhQSFZUa3I3bEp5aGM5eEovU1hPRlJIcz0=" content="ZN7ptlv9BdeLEfYdP5r5"/>
+
+<!-- SAMW START -->
+<link rel="stylesheet" href="https://www.kleayurworld.edu.in/wp-content/plugins/wp-samw/samw.css.php" type="text/css" />
+<!-- SAMW END -->
+
+<link rel="icon" href="https://www.kleayurworld.edu.in/wp-content/uploads/2016/07/cropped-logo2-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.kleayurworld.edu.in/wp-content/uploads/2016/07/cropped-logo2-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.kleayurworld.edu.in/wp-content/uploads/2016/07/cropped-logo2-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.kleayurworld.edu.in/wp-content/uploads/2016/07/cropped-logo2-1-270x270.png" />
+<style id="sccss">/* Enter Your Custom CSS Here */
+#primary {
+    width: 100% !important; 
+}
+.wp-post-image{
+	display:none;
+}
+.search-section {
+    margin-top: 36px !important;
+}
+.site-logo-link > img, .custom-logo-link img {
+    max-height: 122px !important;
+    width: auto;
+    background: #fff;
+    padding: 10px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+._maincontainer {
+	background: #800000 !important;
+    height: 140px !important;
+}
+.read-more a{
+		padding: 0 !important;
+    background: none !important;
+    font-size: 11px !important;
+    color: #d42d3c !important;
+}
+.main-navigation ul li a {
+    font-size: 12px !important;
+}
+.kle_iconnew {
+    background-image: url(https://www.kleayurworld.edu.in/pallava_2019/wp-content/uploads/2019/06/KLE-University-Final-Logo.png);
+    background-repeat: no-repeat;
+    height: 80px;
+    /* margin: 98px; */
+    width: 160px;
+    float: right;
+    text-align: center;
+    /* zoom: 46%; */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-right: 73px;
+}
+#post-3471 .entry-title{
+display:none;
+}
+
+.wp-image-3494{
+border: 1px solid #c6c6c6;
+}
+.noborder_center td{
+      text-align: center !important;
+  	  border:none !important;
+}
+
+.online_abtraction_in {
+    padding: 5px  5px !important;
+  	color:#000 !important;
+    border:1px solid #bababa !important;
+    width:350px !important;
+}
+
+#quick-contact {
+    padding-top: 4px !important;
+}
+
+.online_abtraction label{
+  padding-top:20px;
+}
+
+#quick-contact a, #tophead {
+    color: #c70000 !important;
+}
+.pad_top tr,td,th{
+     padding:2px;
+     border:1px solid #ccc;
+     font-size:12px;
+}
+.pad_top table{
+  border-collapse:collapse;
+  color:#000;
+}
+.pad_top input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"] {
+    padding: 1px 0 1px 1px;
+  color:#000 !important;
+}
+
+.block1p h2{
+  color:#fff !important;
+      font-size: 23px;
+}
+
+.block2p h2{
+  color:#fff !important;
+      font-size: 23px;
+}
+
+.d_b h3{
+  font-family:arial;
+  color:#000 !important;
+  font-size:20px;
+}
+.block1p{
+	    margin: 0;
+    padding: 25px;
+    margin:5px;
+    float: left;
+    width: 318px;
+    background: #e05d29;
+    min-height: 80px;
+    text-align:left;
+  font-family:arial;
+  font-size:25px;
+  color:#fff !important;
+}
+
+.block2p{
+	    margin: 0;
+    padding: 25px;
+    margin:5px;
+    float: left;
+    width: 318px;
+    background: #a1748d;
+    min-height: 80px;
+    text-align:left;
+  font-family:arial;
+  font-size:25px;
+  color:#fff !important;
+}
+.block3p{
+	margin: 0;
+    padding: 6px 10px 5px 5px !important;
+    margin:5px;
+    float: left;
+    width: 202px;
+    background: #9d896a;
+    font-weight:bold;
+    /*min-height: 50px;*/
+    text-align:center;
+  font-family:arial;
+  font-size:25px;
+  color:#fff !important;
+}
+
+.d_b{
+	max-width:450px;
+	padding:4px 30px;
+	border-left:6px solid #000;
+	border-right:2px solid #000;
+	margin-bottom:10px;
+	text-align:left;
+}
+
+.download_blk{
+	width: 220px;
+	float:left;
+}
+
+.clear{
+clear:both;
+}
+
+.form_list ul{
+	text-align:left !important;
+	
+  font-family:arial;
+  font-size:25px;
+  color:#000;
+}
+
+.form_list ul li{
+	padding-bottom:13px !important;
+	font-size:15px !important;
+  list-style-type:square !important;
+}
+
+.lk_hd{
+	width: 257px;
+	float:left;
+}
+
+
+td, th {
+    text-align: left !important; 
+}
+
+
+.wpcf7-form input[type=tel] {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 0;
+    color: #000000;
+    font-size: 12px;
+    height: 30px;
+    margin-bottom: 2px;
+    margin-top: 7px;
+    padding-left: 6px;
+    padding-right: 40px;
+}
+
+.ex_select{
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 0;
+    color: #000000;
+    font-size: 12px;
+    height: 30px;
+    margin-bottom: 2px;
+    margin-top: 7px;
+    padding-left: 6px;
+    padding-right: 40px;
+  width:100%;
+}
+
+.block1 a{
+color:#fff;
+}
+.block2 a{
+color:#fff;
+}
+.block3 a{
+color:#fff;
+}
+.block4 a{
+color:#fff;
+}
+.block5 a{
+color:#fff;
+}
+.block6 a{
+color:#fff;
+}
+
+.marg_t_b{
+  margin:10px 10px;
+}
+.clear{
+clear:both;
+}
+.right{
+float:right;
+}
+#post-grid-1314,#post-grid-48 {
+    padding: 0px !important;
+}
+.mar_top{
+  margin-top: 10px; 
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.wpcf7-form input[type=text],input[type=email]{
+  background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 0;
+    color: #000000;
+    font-size: 12px;
+    height: 30px;
+    margin-bottom: 2px;
+    margin-top: 7px;
+    padding-left: 6px;
+    padding-right: 40px;
+}
+.wpcf7-form input[type=submit] {
+    background: #800000 none repeat scroll 0 0;
+    border-radius: 6px;
+    color: #fff !important;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out 0s;
+}
+.wpcf7-form textarea{
+  background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 0;
+    color: #000000;
+    font-size: 12px;
+    height: 150px;
+    margin-bottom: 2px;
+    margin-top: 7px;
+    padding-left: 6px;
+    padding-right: 40px;
+}
+.wpcf7-form input,textarea:focus{
+  background-color: #fff;
+    border-color: #e5e5e5;
+    border-radius: 0;
+    color: #000000 !important;
+    font-size: 12px;
+    margin-bottom: 2px;
+    margin-top: 7px;
+    padding-left: 6px;
+    padding-right: 40px;
+}
+.portelement_1 .title-block_1 {
+    padding-top: 0px !important;
+}
+.top-news a{
+  font-size:19px ;
+  text-decoration: none !important ;
+  margin-left: 0px !important ;
+  padding-left: 0px !important ;
+}
+
+.top-news {
+  margin-left: 0px !important ;
+  padding-left: 0px !important ;
+}
+
+.top-news a:hover{
+  color:#fff !important;
+  text-decoration: none !important ;
+}
+.list li{
+  list-style:circle;
+  margin-top:8px;
+
+}
+ul li{
+  list-style:none;
+}
+
+.no_border td, th {
+    border:none !important;
+    padding: 5px;
+   
+    text-align: center;
+}
+
+.margin-top{
+  margin-top:15px !important;
+}
+
+.per{
+  text-align:justify;
+  line-height: 2;
+  color:#000;
+  margin-top: 15px;
+}
+
+.footer_menu{
+	font-size: 16px; 
+	color: #000;
+  	font-weight:bold;
+}
+.footer-menu{
+ margin-top:10px !important;
+}
+.footer-menu li a{
+  font-size:12px;
+  padding-bottom:8px !important;
+  color:#cd1900;
+}
+
+.footer-menu ul li::before {
+    color: #cd1900;
+}
+.menu-item a{
+  font-weight:bold;
+}
+
+.sub-menu a{
+font-weight:normal;
+}
+.samw-menu li{
+	padding-top:10px;
+    padding-bottom:10px;
+  border-bottom:1px solid #e5e5e5;
+  color:#000;
+  
+}
+.samw-menu li::before {
+    color: #ffab1f;
+    content: "\f101";
+    display: inline-block;
+    font-family: fontawesome;
+    font-size: 15px;
+    left: 0;
+    margin-left: 5px;
+    margin-right: 8px;
+    
+}
+.samw-menu a{
+	color:#333333;
+}
+
+.tab td {
+    border: 1px solid #dddddd;
+    padding: 5px;
+    text-align: left;
+}
+
+.clear{
+clear:both;
+}
+
+.pis-title a{
+font-size: 20px;
+}
+
+.pis-utility{
+  font-size: 12px;
+    color: #a0a0a0;
+}
+.samw-menu li::before {
+    color: #ffab1f;
+    content: "\f101";
+    display: inline-block;
+    font-family: fontawesome;
+    font-size: 15px;
+    left: 0;
+    margin-left: 5px;
+    margin-right: 8px;
+  float:left;
+}
+
+.ticker-news{
+	margin: 0 0 !important;
+}
+</style></head>
+
+<body class="error404 wp-custom-logo rttpg rttpg-6.0.0 radius-frontend rttpg-body-wrap sfsi_plus_actvite_theme_default group-blog site-layout-fluid global-layout-right-sidebar">
+     
+    <div id="page" class="container hfeed site">
+    <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+    
+	<div class="_maincontainer"> <!---- Newly ADDDED-->
+	<div class="container" > <!---- Newly ADDDED-->
+	    <div class="site-branding">
+
+			<a href="https://www.kleayurworld.edu.in/" class="custom-logo-link" rel="home"><img width="260" height="45" src="https://www.kleayurworld.edu.in/wp-content/uploads/2016/07/cropped-cropped-logo-1-1.png" class="custom-logo" alt="KLE-AYUR-WORLD" decoding="async" /></a> <h3 style="float: left;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 34px;
+    font-weight: bold;">KAHER's Shri BM Kankanawadi Ayurveda Mahavidyalaya, Belagavi<br>Post Graduate Studies and Research Centre</h3>
+										        <div id="site-identity">
+					            	              <p class="site-title"><a href="https://www.kleayurworld.edu.in/" rel="home">KLE-AYUR-WORLD</a></p>
+	            				
+					        </div><!-- #site-identity -->
+			
+	    </div><!-- .site-branding -->
+
+	    	    		    <div class="search-section">
+		    	<form role="search" method="get" class="search-form" action="https://www.kleayurworld.edu.in/">
+      <label>
+        <span class="screen-reader-text">Search for:</span>
+        <input type="search" class="search-field" placeholder="Search..." value="" name="s" title="Search for:" />
+      </label>
+      <input type="submit" class="search-submit" value="Search" />
+    </form>				<div class="sfsi_plus_widget"><div id="sfsi_plus_wDiv"></div><div class="sfsiplus_norm_row sfsi_plus_wDiv"  style="width:225px;position:absolute;;text-align:left"><div style='width:40px; height:auto;margin-left:5px;margin-bottom:5px;' class='sfsi_plus_wicons shuffeldiv '><div class='sfsiplus_inerCnt'><a class=' sficn' data-effect='' target='_blank'  href='https://www.facebook.com/profile.php?id=100005797394712'  style='width:40px; height:40px;opacity:1;' ><img alt='Facebook' title='Facebook' src='https://www.kleayurworld.edu.in/wp-content/plugins/ultimate-social-media-plus/images/icons_theme/default/default_fb.png' width='40' height='40' style='' class='sfcm sfsi_wicon sfsiplusid_round_icon_facebook' data-effect=''  /></a><div class="sfsi_plus_tool_tip_2 sfsi_plus_fb_tool_bdr sfsi_plus_Tlleft sfsiplusid_facebook" style="display:block;width:62px;opacity:0;z-index:-1;"><span class="bot_arow bot_fb_arow"></span><div class="sfsi_plus_inside"><div  class='icon1'><a href='https://www.facebook.com/profile.php?id=100005797394712' target='_blank'><img class='sfsi_plus_wicon' alt='Facebook' title='Facebook' src='https://www.kleayurworld.edu.in/wp-content/plugins/ultimate-social-media-plus/images/visit_icons/Visit_us_fb/icon_Visit_us_en_US.png'  /></a></div><div  class='icon2'><div class="fb-like" data-href="https://www.kleayurworld.edu.in/wp-content/uploads/2021/04/Dr-Santosh-Patil.jpg" data-width="180" data-show-faces="false" data-layout="button" data-action="like"></div></div></div></div></div></div><div style='width:40px; height:auto;margin-left:5px;margin-bottom:5px;' class='sfsi_plus_wicons shuffeldiv '><div class='sfsiplus_inerCnt'><a class=' sficn' data-effect='' target='_blank'  href='https://twitter.com/kleayurworld'  style='width:40px; height:40px;opacity:1;' ><img alt='Twitter' title='Twitter' src='https://www.kleayurworld.edu.in/wp-content/plugins/ultimate-social-media-plus/images/icons_theme/default/default_twitter.png' width='40' height='40' style='' class='sfcm sfsi_wicon sfsiplusid_round_icon_twitter' data-effect=''  /></a></div></div></div ><div id="sfsi_holder" class="sfsi_plus_holders" style="position: relative; float: left;width:100%;z-index:-1;"></div ><script></script><div style="clear: both;"></div></div>		    </div>
+	    			</div>
+		</div>
+    			<div id="tophead">
+		<div class="container">
+			<div id="quick-contact">
+								
+									<div class="top-news">
+						
+						<p>
+																		
+																			<a href="#">
+								<img src="http://www.kleayurworld.edu.in/wp-content/uploads/2017/01/NAAC.png" width="50px" style="border-radius:5px;"/>&nbsp&nbsp<span style="vertical-align: top;display: inline-block;margin-top: 12px;">
+																India's First Institution With NAAC & NABH Accreditation in AYUSH Sector
+								</span>&nbsp&nbsp<img src="http://www.kleayurworld.edu.in/wp-content/uploads/2017/01/unnamed.png" width="50px" style="border-radius:5px;"/>
+							</a>
+												</p>
+						
+					</div>
+				
+								
+			</div>
+
+							<div class="quick-links">
+					<a href="#" class="links-btn">Quick Links</a>
+					<ul id="menu-quick_link" class="menu"><li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"><a href="https://www.kleayurworld.edu.in/kle-ayurveda-education/">AYURVEDA EDUCATION</a></li>
+<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a href="https://www.kleayurworld.edu.in/https-kleayurveda-org/">HEALTH CARE SERVICES</a></li>
+<li id="menu-item-1647" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1647"><a href="https://www.kleayurworld.edu.in/central-research-facility/">RESEARCH &#038; DEVELOPMENT</a></li>
+<li id="menu-item-1646" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1646"><a href="https://www.kleayurworld.edu.in/contact-us-2/">CONTACT US</a></li>
+</ul>					
+				</div>
+			
+							<div class="header-social-wrapper">
+					<div class="widget education_hub_widget_social"></div>				</div><!-- .header-social-wrapper -->
+			
+		</div> <!-- .container -->
+	</div><!--  #tophead -->
+
+	<header id="masthead" class="site-header" role="banner"><div class="container">
+		
+    </div><!-- .container --></header><!-- #masthead -->    <div id="main-nav" class="clear-fix">
+        <div class="container">
+        <nav id="site-navigation" class="main-navigation" role="navigation">
+          <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars"></i>
+Menu</button>
+            <div class="wrap-menu-content">
+				<div class="menu-main_menu-container"><ul id="primary-menu" class="menu"><li id="menu-item-1119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1119"><a href="https://www.kleayurworld.edu.in/">HOME</a></li>
+<li id="menu-item-1114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1114"><a href="#">ABOUT US</a>
+<ul class="sub-menu">
+	<li id="menu-item-1152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1152"><a target="_blank" rel="noopener" href="https://www.kleayurworld.edu.in/bmk-history/">The Inception</a></li>
+	<li id="menu-item-1153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1153"><a target="_blank" rel="noopener" href="https://www.kleayurworld.edu.in/administrative/">Leadership</a>
+	<ul class="sub-menu">
+		<li id="menu-item-7187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7187"><a target="_blank" rel="noopener" href="https://kledeemeduniversity.edu.in/honorable-chancellor">HONORABLE- CHANCELLOR</a></li>
+		<li id="menu-item-7186" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7186"><a target="_blank" rel="noopener" href="https://kledeemeduniversity.edu.in/vice-chancellor">VICE-CHANCELLOR</a></li>
+		<li id="menu-item-7185" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7185"><a target="_blank" rel="noopener" href="https://kledeemeduniversity.edu.in/registrar">REGISTRAR</a></li>
+		<li id="menu-item-7188" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7188"><a target="_blank" rel="noopener" href="https://www.kleayurworld.edu.in/principal/">PRINCIPAL &#038; MEDICAL DIRECTOR</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1187" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1187"><a target="_blank" rel="noopener" href="https://www.kleayurworld.edu.in/vision/">Vision/Mission</a></li>
+	<li id="menu-item-5570" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5570"><a href="#">Recognitions</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2757" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2757"><a href="https://www.kleayurworld.edu.in/naac-accreditation/">NAAC Accreditation</a></li>
+		<li id="menu-item-2751" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2751"><a href="https://www.kleayurworld.edu.in/nabh-accredittation/">NABH Accreditation</a></li>
+		<li id="menu-item-2749" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2749"><a href="https://www.kleayurworld.edu.in/ayush-approved-dtl/">AYUSH Approved DTL</a></li>
+		<li id="menu-item-2752" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2752"><a href="https://www.kleayurworld.edu.in/regional-centre-for-training-to-teachers/">Regional Centre for Training To Teachers</a></li>
+		<li id="menu-item-2750" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2750"><a href="https://www.kleayurworld.edu.in/cghs-emapanelment/">CGHS Empanelment</a></li>
+		<li id="menu-item-2925" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2925"><a href="https://www.kleayurworld.edu.in/cpcsea-certification/">CPCSEA Certification</a></li>
+		<li id="menu-item-2924" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2924"><a href="https://www.kleayurworld.edu.in/mhrd-certification/">MHRD Certification</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1104" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1104"><a href="http://www.klesociety.org/">KLE Society</a>
+	<ul class="sub-menu">
+		<li id="menu-item-7574" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7574"><a href="https://www.kleayurworld.edu.in/kle-management/">KLE MANAGEMENT</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1105" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1105"><a href="http://www.kleuniversity.edu.in/">KLE University</a></li>
+</ul>
+</li>
+<li id="menu-item-1118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1118"><a href="https://www.kleayurworld.edu.in/kle-ayurveda-education/">ACADEMIC PROGRAMS</a>
+<ul class="sub-menu">
+	<li id="menu-item-9168" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9168"><a href="https://www.kleayurworld.edu.in/academic-feedback-form-2/">Academic Feedback form</a></li>
+	<li id="menu-item-6020" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6020"><a href="#">COURSES OFFERED</a>
+	<ul class="sub-menu">
+		<li id="menu-item-8872" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8872"><a href="https://www.kleayurworld.edu.in/brochure/">BROCHURE</a></li>
+		<li id="menu-item-6021" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6021"><a href="#">UNDER GRADUATION</a>
+		<ul class="sub-menu">
+			<li id="menu-item-6033" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6033"><a href="https://www.kleayurworld.edu.in/bams/">BAMS</a></li>
+		</ul>
+</li>
+		<li id="menu-item-6022" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6022"><a href="#">POST GRADUATION</a>
+		<ul class="sub-menu">
+			<li id="menu-item-6032" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6032"><a href="https://www.kleayurworld.edu.in/ayurveda-vachaspati-md-ayurveda/">AYURVEDA VACHASPATI MD (AYURVEDA)</a></li>
+			<li id="menu-item-6031" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6031"><a href="https://www.kleayurworld.edu.in/ayurveda-dhanavantri-ms-ayurveda/">AYURVEDA DHANAVANTRI MS (AYURVEDA)</a></li>
+		</ul>
+</li>
+		<li id="menu-item-9158" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9158"><a href="https://www.kleayurworld.edu.in/value-added-courses-vac-2/">VALUE ADDED COURSES (VAC.)</a></li>
+		<li id="menu-item-8881" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8881"><a href="https://www.kleayurworld.edu.in/interdisciplinary-courses/">INTERDISCIPLINARY COURSES</a></li>
+		<li id="menu-item-8857" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-8857"><a href="https://www.kleayurworld.edu.in/diploma-courses/">DIPLOMA COURSES</a>
+		<ul class="sub-menu">
+			<li id="menu-item-9841" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9841"><a href="https://www.kleayurworld.edu.in/diploma-in-pharmacy-ayurveda/">Diploma in PHARMACY -Ayurveda</a></li>
+			<li id="menu-item-9626" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9626"><a href="https://www.kleayurworld.edu.in/d-pharma-year-2025-26/">D.Pharma  year 2025-26</a></li>
+		</ul>
+</li>
+		<li id="menu-item-8861" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8861"><a href="https://www.kleayurworld.edu.in/ncism-elective-courses/">NCISM – ELECTIVE COURSES</a></li>
+		<li id="menu-item-6123" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6123"><a href="#">FELLOWSHIP PROGRAM</a>
+		<ul class="sub-menu">
+			<li id="menu-item-9669" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9669"><a href="https://www.kleayurworld.edu.in/fellowship-student-details/">Fellowship Student Details</a></li>
+			<li id="menu-item-9620" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9620"><a href="https://www.kleayurworld.edu.in/fellowship-in-ayur-oncology/">Fellowship in Ayur Oncology</a></li>
+			<li id="menu-item-9138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9138"><a href="https://www.kleayurworld.edu.in/ayur-cardiology/">Ayur Cardiology</a></li>
+			<li id="menu-item-9148" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9148"><a href="https://www.kleayurworld.edu.in/fellowship-in-sthoulya/">Fellowship in Sthoulya</a></li>
+			<li id="menu-item-9675" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9675"><a href="https://www.kleayurworld.edu.in/syllabus-of-superspeciality-course/">Syllabus of superspeciality course</a></li>
+			<li id="menu-item-9681" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9681"><a href="https://www.kleayurworld.edu.in/passed-out-student-of-sperspeciality-courses/">Passed out student of Sperspeciality courses</a></li>
+			<li id="menu-item-6125" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6125"><a href="https://www.kleayurworld.edu.in/wp-content/uploads/2021/02/Ayurveda-Oncology-Fellowship-program-2018-2019.pdf">Ayurveda Oncology Fellowship program -2018-2019</a>
+			<ul class="sub-menu">
+				<li id="menu-item-8291" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8291"><a href="https://www.kleayurworld.edu.in/fellowship-alumni-review/">Fellowship Alumni Review</a></li>
+			</ul>
+</li>
+		</ul>
+</li>
+		<li id="menu-item-3133" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3133"><a href="https://www.kleayurworld.edu.in/student-intake/">Courses Intake</a></li>
+		<li id="menu-item-3131" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3131"><a href="https://www.kleayurworld.edu.in/student-list/">STUDENTS LIST</a></li>
+	</ul>
+</li>
+	<li id="menu-item-3134" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3134"><a href="https://www.kleayurworld.edu.in/recognition-of-course/">RECOGNITION OF COURSES</a></li>
+	<li id="menu-item-6975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6975"><a href="#">Committees &#038; Unites</a>
+	<ul class="sub-menu">
+		<li id="menu-item-6910" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6910"><a href="https://www.kleayurworld.edu.in/anti-ragging-committee/">ANTI RAGGING COMMITTEE</a></li>
+		<li id="menu-item-6909" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6909"><a href="https://www.kleayurworld.edu.in/nss-red-cross-unit/">NSS &#038; Red Cross Unit</a></li>
+		<li id="menu-item-6908" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6908"><a href="https://www.kleayurworld.edu.in/vishaka/">VISHAKA</a></li>
+		<li id="menu-item-9815" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9815"><a href="https://www.kleayurworld.edu.in/flying-squad-2024-25/">FLYING SQUAD: 2024-25..</a></li>
+		<li id="menu-item-9821" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9821"><a href="https://www.kleayurworld.edu.in/women-empowerment-cell-2/">Women Empowerment Cell.</a></li>
+		<li id="menu-item-3846" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3846"><a href="https://www.kleayurworld.edu.in/grc/">Grievance Redressal Cell-2026</a></li>
+	</ul>
+</li>
+	<li id="menu-item-3137" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3137"><a href="#">DEPARTMENTS &#038; FACULTY</a>
+	<ul class="sub-menu">
+		<li id="menu-item-3144" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3144"><a href="#">UG/PG Departments</a>
+		<ul class="sub-menu">
+			<li id="menu-item-3141" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3141"><a href="https://www.kleayurworld.edu.in/departments-of-kriya-sharir/">KRIYA SHARIR</a></li>
+			<li id="menu-item-3140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3140"><a href="https://www.kleayurworld.edu.in/departments-of-rachana-sharir/">RACHANA SHARIR</a></li>
+			<li id="menu-item-3139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3139"><a href="https://www.kleayurworld.edu.in/departments-of-ayurveda-samhita-siddhant/">AYURVEDA SAMHITA &#038; SIDDHANT</a></li>
+			<li id="menu-item-3145" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3145"><a href="https://www.kleayurworld.edu.in/pg-department-of-dravyaguna-vigyana/">DRAVYAGUNA VIGYANA</a></li>
+			<li id="menu-item-3146" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3146"><a href="https://www.kleayurworld.edu.in/pg-department-of-rasashastra-bhaisajya-kalpana/">RASASHASTRA &#038; BHAISAJYA KALPANA</a></li>
+			<li id="menu-item-3147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3147"><a href="https://www.kleayurworld.edu.in/pg-department-of-agada-tantra-avum-vidhi-vigyan/">AGADA TANTRA AVUM VIDHI VIGYAN</a></li>
+			<li id="menu-item-3148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3148"><a href="https://www.kleayurworld.edu.in/pg-department-of-kaumarbhritya/">KAUMARBHRITYA</a></li>
+			<li id="menu-item-3149" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3149"><a href="https://www.kleayurworld.edu.in/pg-department-of-kayachikitsa/">KAYACHIKITSA</a></li>
+			<li id="menu-item-3151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3151"><a href="https://www.kleayurworld.edu.in/pg-department-of-shalyatantra-sangyaharan/">SHALYA TANTRA</a></li>
+			<li id="menu-item-3152" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3152"><a href="https://www.kleayurworld.edu.in/pg-department-of-shalakyatantra/">SHALAKYATANTRA</a></li>
+			<li id="menu-item-3153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3153"><a href="https://www.kleayurworld.edu.in/pg-department-of-panchakarma/">PANCHAKARMA</a></li>
+			<li id="menu-item-3142" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3142"><a href="https://www.kleayurworld.edu.in/departments-of-rognidan-avum-vikrit-vigyan/">ROGNIDAN AVUM VIKRIT VIGYAN</a></li>
+			<li id="menu-item-3154" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3154"><a href="https://www.kleayurworld.edu.in/departments-of-swasthavritta-yoga/">SWASTHAVRITTA &#038; YOGA</a></li>
+			<li id="menu-item-3143" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3143"><a href="https://www.kleayurworld.edu.in/departments-of-prasuit-striroga/">PRASUTI TANTRA EVUM STRI ROGA</a></li>
+			<li id="menu-item-3156" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3156"><a href="https://www.kleayurworld.edu.in/rasayana-vajikarana/">Rasayana &#038; Vajikarana</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li id="menu-item-3161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3161"><a href="https://www.kleayurworld.edu.in/class-rooms/">LEARNING RESOURCES</a>
+	<ul class="sub-menu">
+		<li id="menu-item-3160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3160"><a href="#">E-CONTENTS</a>
+		<ul class="sub-menu">
+			<li id="menu-item-4298" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4298"><a href="https://www.kleayurworld.edu.in/jnanataranga/">JNANATARANGA</a>
+			<ul class="sub-menu">
+				<li id="menu-item-5796" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5796"><a href="https://www.kleayurworld.edu.in/akshar-all-books/">AKSHAR-ALL BOOKS</a></li>
+				<li id="menu-item-5795" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5795"><a href="https://www.kleayurworld.edu.in/akshara-e-books-1/">Akshara E-Books 1</a></li>
+			</ul>
+</li>
+			<li id="menu-item-4869" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4869"><a href="http://103.104.223.194/E-JOURNALS">e-JOURNALS</a></li>
+			<li id="menu-item-4947" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4947"><a href="http://38.183.96.87/pg_elog_book">PG e-logbook</a>
+			<ul class="sub-menu">
+				<li id="menu-item-9071" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9071"><a href="https://www.kleayurworld.edu.in/pg-e-log-link/">PG E log Link</a></li>
+			</ul>
+</li>
+			<li id="menu-item-7062" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7062"><a target="_blank" rel="noopener" href="https://www.kleayurworld.edu.in/internee-e-logbook/">Intern Elog</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li id="menu-item-3168" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3168"><a href="#">NEW INITIATIVES</a>
+	<ul class="sub-menu">
+		<li id="menu-item-3169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3169"><a href="https://www.kleayurworld.edu.in/iqac/">IQAC</a></li>
+		<li id="menu-item-3170" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3170"><a href="https://www.kleayurworld.edu.in/central-research-facility-2/">Central Research Facility</a></li>
+		<li id="menu-item-3171" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3171"><a href="https://www.kleayurworld.edu.in/department-of-ayurved-medical-education/">DAME</a></li>
+		<li id="menu-item-3172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3172"><a href="https://www.kleayurworld.edu.in/clinical-skill-lab/">Clinical Skill Lab</a></li>
+		<li id="menu-item-3173" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3173"><a href="https://www.kleayurworld.edu.in/dept-of-research-methodology-bio-statistics/">RESEARCH METHODOLOGY AND BIOSTATISTICS</a></li>
+		<li id="menu-item-3212" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3212"><a href="http://www.kleayurworld.edu.in/index.php/ayurtech-2/">AyurTech</a></li>
+		<li id="menu-item-3174" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3174"><a href="https://www.kleayurworld.edu.in/vrkikshayurveda/">Vrikshayurveda</a></li>
+		<li id="menu-item-3175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3175"><a href="https://www.kleayurworld.edu.in/placement-cell/">Placement cell</a></li>
+	</ul>
+</li>
+	<li id="menu-item-3158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3158"><a href="https://www.kleayurworld.edu.in/academic-activities/">Academic Activities</a></li>
+	<li id="menu-item-4636" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4636"><a target="_blank" rel="noopener" href="https://www.kleayurworld.edu.in/syllabus-curriculum/">SYLLABUS &#038; CURRICULUM</a>
+	<ul class="sub-menu">
+		<li id="menu-item-8529" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-8529"><a href="https://www.kleayurworld.edu.in/unitized-syllabus-and-time-table-2/">Unitized Syllabus and Time Table</a>
+		<ul class="sub-menu">
+			<li id="menu-item-8528" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-8528"><a href="https://www.kleayurworld.edu.in/ug/">UG</a>
+			<ul class="sub-menu">
+				<li id="menu-item-8568" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8568"><a href="https://www.kleayurworld.edu.in/1-ayurveda-samhita-and-siddhanta/">1.Ayurveda Samhita and Siddhanta</a></li>
+				<li id="menu-item-8567" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8567"><a href="https://www.kleayurworld.edu.in/2-rachana-shareera/">2.Rachana Shareera</a></li>
+				<li id="menu-item-8590" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8590"><a href="https://www.kleayurworld.edu.in/3-panchakarma/">3.Panchakarma</a></li>
+				<li id="menu-item-8589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8589"><a href="https://www.kleayurworld.edu.in/4-agadatntra-and-vidhi-vaidyaka/">4.AgadaTntra and Vidhi Vaidyaka</a></li>
+				<li id="menu-item-8588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8588"><a href="https://www.kleayurworld.edu.in/5-dravyguna-vijnana/">5. Dravyguna Vijnana</a></li>
+				<li id="menu-item-8587" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8587"><a href="https://www.kleayurworld.edu.in/6-kaumarabhritya/">6. Kaumarabhritya</a></li>
+				<li id="menu-item-8586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8586"><a href="https://www.kleayurworld.edu.in/7-kayachikitsa/">7. Kayachikitsa</a></li>
+				<li id="menu-item-8619" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8619"><a href="https://www.kleayurworld.edu.in/8-kriya-shareera/">8. Kriya Shareera</a></li>
+				<li id="menu-item-8618" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8618"><a href="https://www.kleayurworld.edu.in/9-manasroga-and-manovijnana/">9.Manasroga and Manovijnana</a></li>
+				<li id="menu-item-8617" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8617"><a href="https://www.kleayurworld.edu.in/10-rasashastra-and-bhaishajya-kalpana/">10.Rasashastra and Bhaishajya Kalpana</a></li>
+				<li id="menu-item-8616" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8616"><a href="https://www.kleayurworld.edu.in/11-rasayana-vajeekaran/">11.Rasayana Vajeekaran</a></li>
+				<li id="menu-item-8615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8615"><a href="https://www.kleayurworld.edu.in/12-roga-nidana-vikrutivijnana/">12.Roga Nidana Vikrutivijnana</a></li>
+				<li id="menu-item-8614" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8614"><a href="https://www.kleayurworld.edu.in/13-shalakya-tantra/">13.Shalakya Tantra</a></li>
+				<li id="menu-item-8613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8613"><a href="https://www.kleayurworld.edu.in/14-shalyatantra/">14.ShalyaTantra</a></li>
+				<li id="menu-item-8612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8612"><a href="https://www.kleayurworld.edu.in/15-stree-roga-prasuti-tantra/">15.Stree Roga – Prasuti Tantra</a></li>
+				<li id="menu-item-8611" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8611"><a href="https://www.kleayurworld.edu.in/16-swasthavritta-and-yoga/">16.Swasthavritta and Yoga</a></li>
+			</ul>
+</li>
+			<li id="menu-item-8527" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-8527"><a href="https://www.kleayurworld.edu.in/pg/">PG</a>
+			<ul class="sub-menu">
+				<li id="menu-item-8712" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8712"><a href="https://www.kleayurworld.edu.in/panchakarma_pg/">Panchakarma_PG</a></li>
+				<li id="menu-item-8711" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8711"><a href="https://www.kleayurworld.edu.in/agadatntra-and-vidhi-vaidyaka-pg/">AgadaTntra and Vidhi Vaidyaka-PG</a></li>
+				<li id="menu-item-8710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8710"><a href="https://www.kleayurworld.edu.in/dravyguna-vijnana-pg/">Dravyguna Vijnana-PG</a></li>
+				<li id="menu-item-8709" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8709"><a href="https://www.kleayurworld.edu.in/kaumarabhritya-pg/">Kaumarabhritya-PG</a></li>
+				<li id="menu-item-8708" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8708"><a href="https://www.kleayurworld.edu.in/kayachikitsa_pg/">Kayachikitsa_PG</a></li>
+				<li id="menu-item-8707" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8707"><a href="https://www.kleayurworld.edu.in/manasroga-and-manovijnana-pg/">Manasroga and Manovijnana-PG</a></li>
+				<li id="menu-item-8706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8706"><a href="https://www.kleayurworld.edu.in/rasashastra-and-bhaishajya-kalpana-_pg/">Rasashastra and Bhaishajya Kalpana _PG</a></li>
+				<li id="menu-item-8705" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8705"><a href="https://www.kleayurworld.edu.in/rasayana-vajeekaran_pg/">Rasayana Vajeekaran_PG</a></li>
+				<li id="menu-item-8704" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8704"><a href="https://www.kleayurworld.edu.in/roga-nidana-vikrutivijnana-pg/">Roga Nidana Vikrutivijnana-PG</a></li>
+				<li id="menu-item-8703" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8703"><a href="https://www.kleayurworld.edu.in/shalakya-tantra-pg/">Shalakya Tantra-PG</a></li>
+				<li id="menu-item-8702" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8702"><a href="https://www.kleayurworld.edu.in/shalyatantra_pg/">ShalyaTantra_PG</a></li>
+				<li id="menu-item-8701" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8701"><a href="https://www.kleayurworld.edu.in/stree-roga-prasuti-tantra-pg/">Stree Roga – Prasuti Tantra-PG</a></li>
+				<li id="menu-item-8700" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8700"><a href="https://www.kleayurworld.edu.in/swasthavritta-and-yoga-pg/">Swasthavritta and Yoga-PG</a></li>
+			</ul>
+</li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li id="menu-item-3179" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3179"><a href="#">ALUMNI</a>
+	<ul class="sub-menu">
+		<li id="menu-item-3180" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3180"><a href="https://www.kleayurworld.edu.in/online-forms/">Online forms</a></li>
+		<li id="menu-item-3181" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3181"><a href="https://www.kleayurworld.edu.in/distinguish-alumni/">Distinguished Alumni</a></li>
+		<li id="menu-item-3182" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3182"><a href="https://www.kleayurworld.edu.in/awarda/">Alumni Awards</a></li>
+		<li id="menu-item-3183" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3183"><a href="https://www.kleayurworld.edu.in/bilaws/">Bylaws</a></li>
+		<li id="menu-item-3213" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3213"><a href="http://www.kleayurworld.edu.in/index.php/activitiesphotos/">Activities</a></li>
+		<li id="menu-item-3184" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3184"><a href="https://www.kleayurworld.edu.in/alumni-data-base/">Alumni Data Base</a>
+		<ul class="sub-menu">
+			<li id="menu-item-3185" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3185"><a href="https://www.kleayurworld.edu.in/ug-alumni/">UG Alumni</a></li>
+			<li id="menu-item-3186" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3186"><a href="https://www.kleayurworld.edu.in/pg-alumni/">PG Alumni</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-6976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6976"><a href="http://kleayurveda.org">HEALTH CARE SERVICES</a>
+<ul class="sub-menu">
+	<li id="menu-item-4591" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4591"><a href="https://www.kleayurworld.edu.in/facilities/">Hospital facilities</a></li>
+	<li id="menu-item-3231" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3231"><a href="#">SPECIALTIES</a>
+	<ul class="sub-menu">
+		<li id="menu-item-3232" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3232"><a href="#">Regular</a>
+		<ul class="sub-menu">
+			<li id="menu-item-3235" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3235"><a href="https://www.kleayurworld.edu.in/index.php/kayachikitsa/">Kayachikitsa</a></li>
+			<li id="menu-item-3234" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3234"><a href="https://www.kleayurworld.edu.in/koumarbhritya/">Koumarbhritya</a></li>
+			<li id="menu-item-3236" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3236"><a href="https://www.kleayurworld.edu.in/index.php/panchakarma">Panchakarma</a></li>
+			<li id="menu-item-3237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3237"><a href="https://www.kleayurworld.edu.in/prasuti-striroga/">Prasuti &#038; Striroga</a></li>
+			<li id="menu-item-3243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3243"><a href="https://www.kleayurworld.edu.in/shalakya-netra/">Shalakya  Tantra</a></li>
+			<li id="menu-item-3244" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3244"><a href="https://www.kleayurworld.edu.in/shalya-tantra/">Shalya Tantra</a></li>
+			<li id="menu-item-3245" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3245"><a href="https://www.kleayurworld.edu.in/swasthavritta/">Swasthavritta</a></li>
+			<li id="menu-item-3246" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3246"><a href="https://www.kleayurworld.edu.in/dental/">Dental</a></li>
+			<li id="menu-item-3247" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3247"><a href="https://www.kleayurworld.edu.in/physiotheraphy/">Physiotheraphy</a></li>
+		</ul>
+</li>
+		<li id="menu-item-3233" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3233"><a href="#">KLE Initiatives</a>
+		<ul class="sub-menu">
+			<li id="menu-item-3248" class="menu-item menu-item-type- menu-item-object-page menu-item-3248"><a>Hridya</a></li>
+			<li id="menu-item-4576" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4576"><a href="https://www.kleayurworld.edu.in/fertility-centre/">Fertility Centre</a></li>
+			<li id="menu-item-4578" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4578"><a href="https://www.kleayurworld.edu.in/garbhsanskar/">Garbhsanskar</a></li>
+			<li id="menu-item-4579" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4579"><a href="https://www.kleayurworld.edu.in/samvardhana/">Samvardhana</a></li>
+			<li id="menu-item-4580" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4580"><a href="https://www.kleayurworld.edu.in/utsaahalife-style-management-and-rejuvenation-centre/">Utsaaha</a></li>
+			<li id="menu-item-4581" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4581"><a href="https://www.kleayurworld.edu.in/priyangu-skin-hair-care-clinic/">Priyangu (Skin &#038; Hair care clinic)</a></li>
+			<li id="menu-item-4582" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4582"><a href="https://www.kleayurworld.edu.in/nirvisha/">Nirvisha</a></li>
+			<li id="menu-item-4583" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4583"><a href="https://www.kleayurworld.edu.in/manasaroga/">Manasaroga</a></li>
+			<li id="menu-item-4584" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4584"><a href="https://www.kleayurworld.edu.in/thyroid-clinic/">Thyroid Clinic</a></li>
+			<li id="menu-item-4585" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4585"><a href="https://www.kleayurworld.edu.in/respiratory-clinic/">Respiratory Clinic</a></li>
+			<li id="menu-item-4586" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4586"><a href="https://www.kleayurworld.edu.in/diabetes-specialty-clinic/">Diabetes Specialty Clinic</a></li>
+			<li id="menu-item-4587" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4587"><a href="https://www.kleayurworld.edu.in/musculoskeletal-specialty-clinic/">Musculoskeletal Specialty clinic</a></li>
+			<li id="menu-item-4588" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4588"><a href="https://www.kleayurworld.edu.in/abhaya-ayurveda-cancer-care/">Abhaya – Ayurveda Cancer Care</a></li>
+		</ul>
+</li>
+		<li id="menu-item-8817" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-8817"><a href="https://www.kleayurworld.edu.in/best-practieses/">Best Practieses</a>
+		<ul class="sub-menu">
+			<li id="menu-item-8826" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8826"><a href="https://www.kleayurworld.edu.in/1-best-practices/">1.Best Practices.</a></li>
+			<li id="menu-item-8825" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-8825"><a href="https://www.kleayurworld.edu.in/2-distinctiveness/">2.DISTINCTIVENESS</a></li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li id="menu-item-7664" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-7664"><a href="#">KLE Ayurveda Pharmacy</a>
+	<ul class="sub-menu">
+		<li id="menu-item-7668" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7668"><a href="https://www.kleayurworld.edu.in/about-pharmacy/">About Pharmacy</a></li>
+		<li id="menu-item-7667" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7667"><a href="https://www.kleayurworld.edu.in/products/">Products</a></li>
+		<li id="menu-item-7666" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7666"><a href="https://www.kleayurworld.edu.in/video-gallery-2/">Video Gallery</a></li>
+		<li id="menu-item-7665" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7665"><a href="https://www.kleayurworld.edu.in/contact-us-3/">Contact Us</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-4572" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4572"><a target="_blank" rel="noopener" href="https://www.kleayurworld.edu.in/central-research-facility-2/">Research and development</a>
+<ul class="sub-menu">
+	<li id="menu-item-3157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3157"><a href="https://www.kleayurworld.edu.in/research-publication/">Research publication</a></li>
+	<li id="menu-item-5824" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5824"><a href="https://www.kleayurworld.edu.in/list-of-projects-funded-sponsored/">List of Projects Funded/ Sponsored</a></li>
+	<li id="menu-item-9850" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-9850"><a href="https://www.kleayurworld.edu.in/central-research-facility-3/">Central Research Facility</a>
+	<ul class="sub-menu">
+		<li id="menu-item-9855" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9855"><a href="https://www.kleayurworld.edu.in/brochure-2/">Brochure</a></li>
+	</ul>
+</li>
+	<li id="menu-item-3178" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3178"><a target="_blank" rel="noopener" href="https://www.kleayurworld.edu.in/distictions/">AWARDS</a>
+	<ul class="sub-menu">
+		<li id="menu-item-4522" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4522"><a target="_blank" rel="noopener" href="https://www.kleayurworld.edu.in/research-awards/">Research Awards</a></li>
+		<li id="menu-item-3177" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3177"><a href="https://www.kleayurworld.edu.in/awards-and-achievements/">Awards and achievements</a></li>
+		<li id="menu-item-5400" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5400"><a href="https://www.kleayurworld.edu.in/number-of-awards-recognitions-received-for-innovation-discoveries-by-the-institution-teachers-research-scholars-students-during-the-last-five-years/">Awards for Innovation</a></li>
+		<li id="menu-item-3176" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3176"><a href="#">AWARDS AND CREDENTIAL</a></li>
+	</ul>
+</li>
+	<li id="menu-item-9953" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9953"><a href="https://www.kleayurworld.edu.in/desha-prakruti-application-2/">Desha &#8211; Prakruti Application:</a></li>
+</ul>
+</li>
+<li id="menu-item-4882" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4882"><a href="http://#">LIBRARY</a>
+<ul class="sub-menu">
+	<li id="menu-item-4887" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4887"><a href="https://www.kleayurworld.edu.in/jyananasangam/">Institution Library</a></li>
+	<li id="menu-item-4885" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4885"><a target="_blank" rel="noopener" href="https://www.kleayurworld.edu.in/digital-library/">Digital Library</a></li>
+	<li id="menu-item-4886" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4886"><a target="_blank" rel="noopener" href="https://www.kleayurworld.edu.in/e-news-paper/">e-news-paper</a></li>
+</ul>
+</li>
+<li id="menu-item-4590" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4590"><a href="https://www.kleayurworld.edu.in/kle-ayur-world-facilities/">FACILITIES &#038; ACTIVITIES</a>
+<ul class="sub-menu">
+	<li id="menu-item-7161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7161"><a href="https://www.kleayurworld.edu.in/for-staff/">For staff</a></li>
+	<li id="menu-item-7160" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7160"><a href="https://www.kleayurworld.edu.in/for-students/">For Students</a></li>
+	<li id="menu-item-4904" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4904"><a href="http://#">Regulatory Info</a>
+	<ul class="sub-menu">
+		<li id="menu-item-4905" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4905"><a href="https://www.kleayurworld.edu.in/administrative/">Administrative</a></li>
+		<li id="menu-item-9727" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-9727"><a href="https://www.kleayurworld.edu.in/academic-time-table/">ACADEMIC TIME TABLE</a>
+		<ul class="sub-menu">
+			<li id="menu-item-9771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-9771"><a href="https://www.kleayurworld.edu.in/ug-students/">UG Students</a>
+			<ul class="sub-menu">
+				<li id="menu-item-9960" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9960"><a href="https://www.kleayurworld.edu.in/calendar-of-events-ug-2025-batch/">Calendar Of Events-UG 2025 Batch</a></li>
+			</ul>
+</li>
+			<li id="menu-item-9762" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9762"><a href="https://www.kleayurworld.edu.in/pg-schoolers/">PG Schoolers</a></li>
+			<li id="menu-item-9792" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9792"><a href="https://www.kleayurworld.edu.in/d-pharma/">D-Pharma</a></li>
+			<li id="menu-item-9751" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-9751"><a href="https://www.kleayurworld.edu.in/fellowship/">Fellowship</a></li>
+			<li id="menu-item-9779" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9779"><a href="https://www.kleayurworld.edu.in/9774-2/">CERTIFICATE COURSE</a></li>
+		</ul>
+</li>
+		<li id="menu-item-4933" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4933"><a href="https://www.kleayurworld.edu.in/teaching-faculty-department/">Teaching faculty &#038; Department</a></li>
+		<li id="menu-item-4907" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4907"><a href="https://www.kleayurworld.edu.in/non-teaching-staff/">Non-Teaching Staff</a></li>
+		<li id="menu-item-4909" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4909"><a href="https://www.kleayurworld.edu.in/student-intake/">Intake Capacity UG/PG</a></li>
+		<li id="menu-item-4910" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4910"><a href="https://www.kleayurworld.edu.in/student-list/">List of admitted students UG/PG</a></li>
+		<li id="menu-item-4911" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4911"><a href="https://www.kleayurworld.edu.in/research-publication/">Research Publications</a></li>
+		<li id="menu-item-5487" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5487"><a href="https://www.kleayurworld.edu.in/cme-conference-workshop/">CME/ Conference/Workshop</a></li>
+		<li id="menu-item-4913" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4913"><a href="https://www.kleayurworld.edu.in/awards-and-achievements/">Awards and achievements</a></li>
+		<li id="menu-item-9416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9416"><a href="https://www.kleayurworld.edu.in/affiliated-university-2025/">AFFILIATED UNIVERSITY.</a></li>
+		<li id="menu-item-3159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3159"><a href="https://www.kleayurworld.edu.in/results/">Results</a></li>
+		<li id="menu-item-5474" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5474"><a href="https://www.kleayurworld.edu.in/recognition-of-course">RECOGNITION OF COURSES</a></li>
+		<li id="menu-item-4917" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4917"><a href="https://www.kleayurworld.edu.in/clinical-material-list/">Clinical materials in the Hospital</a></li>
+		<li id="menu-item-4914" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4914"><a href="https://www.kleayurworld.edu.in/research-awards/">Research Awards</a></li>
+		<li id="menu-item-4915" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4915"><a href="https://www.kleayurworld.edu.in/distictions/">AWARDS</a></li>
+		<li id="menu-item-4908" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4908"><a href="https://www.kleayurworld.edu.in/timings/">Hospital Staff</a></li>
+		<li id="menu-item-4918" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4918"><a href="https://www.kleayurworld.edu.in/attendance-summery/">Bio metric attendance</a></li>
+		<li id="menu-item-4964" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4964"><a href="https://www.kleayurworld.edu.in/opdipd-anyalysis">OPD/IPD Analysis</a></li>
+	</ul>
+</li>
+	<li id="menu-item-4612" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4612"><a href="https://www.kleayurworld.edu.in/student-council-2/">Student Council</a></li>
+	<li id="menu-item-4611" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4611"><a href="https://www.kleayurworld.edu.in/student-amenities/">Student amenities</a></li>
+	<li id="menu-item-4595" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4595"><a target="_blank" rel="noopener" href="https://www.kleayurworld.edu.in/digital-library/">Digital Library</a></li>
+	<li id="menu-item-4596" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4596"><a target="_blank" rel="noopener" href="https://www.kleayurworld.edu.in/e-news-paper/">e-News paper</a></li>
+	<li id="menu-item-4597" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4597"><a href="https://www.kleayurworld.edu.in/festivals/">Festivals</a></li>
+	<li id="menu-item-4603" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4603"><a target="_blank" rel="noopener" href="https://www.kleayurworld.edu.in/jyananasangam/">Jnana Sangama</a></li>
+	<li id="menu-item-4609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4609"><a href="https://www.kleayurworld.edu.in/shishyopanayana-2/">SHISHYOPANAYANA</a></li>
+	<li id="menu-item-4592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4592"><a target="_blank" rel="noopener" href="https://www.kleayurworld.edu.in/antiraging/">Antiraging</a></li>
+</ul>
+</li>
+<li id="menu-item-4573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4573"><a href="https://www.kleayurworld.edu.in/testimonial/">Testimonial</a></li>
+</ul></div>            </div><!-- .menu-content -->
+        </nav><!-- #site-navigation -->
+       </div> <!-- .container -->
+    </div> <!-- #main-nav -->
+    		<div id="content" class="site-content"><div class="container"><div class="inner-wrapper">    
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			<section class="error-404 not-found">
+				<header class="page-header">
+					<h1 class="page-title">Oops! That page can&rsquo;t be found.</h1>
+				</header><!-- .page-header -->
+
+				<div class="page-content">
+				<h2 class="error-title">404</h2>
+          <p>It looks like nothing was found at this location. Maybe try one of the links below or a search?</p>
+
+					<form role="search" method="get" class="search-form" action="https://www.kleayurworld.edu.in/">
+      <label>
+        <span class="screen-reader-text">Search for:</span>
+        <input type="search" class="search-field" placeholder="Search..." value="" name="s" title="Search for:" />
+      </label>
+      <input type="submit" class="search-submit" value="Search" />
+    </form>
+					
+				</div><!-- .page-content -->
+			</section><!-- .error-404 -->
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+</div><!-- .inner-wrapper --></div><!-- .container --></div><!-- #content -->
+	<footer id="colophon" class="site-footer" role="contentinfo"><div class="container">    
+            <div class="copyright"  style="float: left;">
+        <h3 style='color:#fff;margin-bottom: 0px;'><strong>KAHER's Shri BM. Kankanawadi Ayurveda Mahavidyalaya <br> Post Graduate studies and Research Centre<br>Belagavi, Karnataka</strong></h3>
+					<ul style='text-align: left;margin-left: 86px;'>
+<li >- KLE Shri BM Kankanawadi Ayurveda Mahavidyalaya</li>
+<li>- KLE Shri BM Kankanawadi Ayurveda Mahavidyalaya
+	<br><span style='padding-left: 9px;'>Post Graduate Studies and Research Centre, Belgaum</span></li>
+<li>- KAHER’s Shri BM Kankanawadi Ayurveda Mahavidyalaya
+<br><span style='padding-left: 9px;'>Post Graduate Studies and Research Centre, Belgaum</span></li>
+<li>- KAHER’s Shri BM Kankanawadi Ayurveda Mahavidyalaya</li>
+<li >- KLE Society’s  Shri BM Kankanawadi Ayurveda Mahavidyalaya</li>
+<li>- KLE Society’s  Shri BM Kankanawadi Ayurveda Mahavidyalaya 
+<br><span style='padding-left: 9px;'>Post Graduate Studies and Research Centre, Belgaum</span></li>
+</ul>
+					<p style='color:#fff;'>A Constituent Unit of</center></p>
+					<h3 style='color:#fff;margin-bottom: 0;margin-top: -16px;'><b>KLE ACADEMY OF HIGHER EDUCATION AND RESEARCH</b></h3>
+					<p style='color:#fff'>(Deemed-to-be-University)<br>
+					( Accredited with ' A<sup>+</sup> ' Grade by NAAC(3rd Cycle) II Placed in Category ‘A’ by MHRD (GoI)</p>
+                    <p style='color:#fff;font-size: 10px;'>
+                    Shahapur, Belagavi – 590 003, Karnataka, India<br>
+                Phone: +91 831 2486286, +91-7204969289; Fax: +91 831 2424157<br>
+                Website: www. kleayurworld.edu.in, Email: bmkprincipal.kaher@kleayurworld.edu.in</p>
+               <a href='http://www.kleayurworld.edu.in/index.php/contact-us-2/'>Maps / Direction / Contact Us</a><br>
+                </p>		<!--
+		<h3 style='color:#fff;margin-bottom: 0px;'><strong>AND</strong></h3>
+					<h3 style='color:#fff;margin-bottom: 0px;'><strong>KLE AYURVEDA HOSPITAL & MEDICAL RESEARCH CENTRE</strong></h3> -->
+        <!-- Start of WebFreeCounter Code -->
+ <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=da4cdb6d346ab2b9e256d2ace16ba2a0e2e9b7d2'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/956708/t/5"></script>
+<!-- End of WebFreeCounter Code -->
+      </div><!-- .copyright -->
+          <!--<div style="clear: both"></div>-->
+    <div class="site-info" style="float: right">
+        <div >
+		
+			<div style="float: right;
+    margin-right: 20px;
+    background: #fff;
+    width: 102px;
+    padding: 10px;
+    border-radius: 2px;"><img src="https://www.kleayurworld.edu.in/wp-content/uploads/2019/06/KLE-ayurveda-Logo-new.png"/></div>
+			<div style="float:right; margin-right: 20px;    background: #fff;
+    width: 162px;
+    padding: 10px;
+    border-radius: 2px;;"><img src="https://www.kleayurworld.edu.in/kle-bmk-logo.jpg"/></div>
+		<div style="    float: right;
+    margin-right: 20px;
+    background: #fff;
+    width: 140px;
+    height: 137px;
+    border-radius: 2px;
+"><img src="https://www.kleayurworld.edu.in/wp-content/uploads/2019/06/KLE-society-belgaum.png" style="width:102px !important"/></div>
+		<div style="float:right; margin-right: 20px;    background: #fff;
+    width: 95px;
+	height: 136px;
+    padding: 10px;
+    border-radius: 2px;;"><img src="https://www.kleayurworld.edu.in/pallava_2019/wp-content/uploads/2019/06/KLE-University-Final-Logo.png"/></div>	
+			
+        <div style="clear: both"></div>
+		
+        <!-- Previous place of footer-->
+        </div>
+    </div><!-- .site-info -->
+    <div style="clear: both"></div>
+    <p style="float: right">
+            <a href="">Copyright. All rights reserved </a>
+        <span class="sep" style="color:#fff"> | Designed By </span>
+		 <a href="https://saraswatitechnology.com/" rel="designer" target="_blank" >Infomatrix & Saraswati Technology</a>        </p>
+    
+    	</div><!-- .container --></footer><!-- #colophon -->
+</div><!-- #page --><a href="#page" class="scrollup" id="btn-scrollup"><i class="fa fa-chevron-up"></i>
+
+  </a>
+
+
+
+
+			<!--facebook like and share js -->
+		<div id="fb-root"></div>
+
+		<script>
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s);
+				js.id = id;
+				js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+	<script>
+	window.addEventListener('sfsi_plus_functions_loaded', function() {
+		if (typeof sfsi_plus_responsive_toggle == 'function') {
+			sfsi_plus_responsive_toggle(0);
+			// console.log('sfsi_plus_responsive_toggle');
+		}
+	})
+</script>
+
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.7.4' id='swv-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/www.kleayurworld.edu.in\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7.4' id='contact-form-7-js'></script>
+<script type='text/javascript' id='pt-cv-content-views-script-js-extra'>
+/* <![CDATA[ */
+var PT_CV_PUBLIC = {"_prefix":"pt-cv-","page_to_show":"5","_nonce":"2eb5243fd8","is_admin":"","is_mobile":"","ajaxurl":"https:\/\/www.kleayurworld.edu.in\/wp-admin\/admin-ajax.php","lang":"","loading_image_src":"data:image\/gif;base64,R0lGODlhDwAPALMPAMrKygwMDJOTkz09PZWVla+vr3p6euTk5M7OzuXl5TMzMwAAAJmZmWZmZszMzP\/\/\/yH\/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAADwAPAAAEQvDJaZaZOIcV8iQK8VRX4iTYoAwZ4iCYoAjZ4RxejhVNoT+mRGP4cyF4Pp0N98sBGIBMEMOotl6YZ3S61Bmbkm4mAgAh+QQFCgAPACwAAAAADQANAAAENPDJSRSZeA418itN8QiK8BiLITVsFiyBBIoYqnoewAD4xPw9iY4XLGYSjkQR4UAUD45DLwIAIfkEBQoADwAsAAAAAA8ACQAABC\/wyVlamTi3nSdgwFNdhEJgTJoNyoB9ISYoQmdjiZPcj7EYCAeCF1gEDo4Dz2eIAAAh+QQFCgAPACwCAAAADQANAAAEM\/DJBxiYeLKdX3IJZT1FU0iIg2RNKx3OkZVnZ98ToRD4MyiDnkAh6BkNC0MvsAj0kMpHBAAh+QQFCgAPACwGAAAACQAPAAAEMDC59KpFDll73HkAA2wVY5KgiK5b0RRoI6MuzG6EQqCDMlSGheEhUAgqgUUAFRySIgAh+QQFCgAPACwCAAIADQANAAAEM\/DJKZNLND\/kkKaHc3xk+QAMYDKsiaqmZCxGVjSFFCxB1vwy2oOgIDxuucxAMTAJFAJNBAAh+QQFCgAPACwAAAYADwAJAAAEMNAs86q1yaWwwv2Ig0jUZx3OYa4XoRAfwADXoAwfo1+CIjyFRuEho60aSNYlOPxEAAAh+QQFCgAPACwAAAIADQANAAAENPA9s4y8+IUVcqaWJ4qEQozSoAzoIyhCK2NFU2SJk0hNnyEOhKR2AzAAj4Pj4GE4W0bkJQIAOw=="};
+var PT_CV_PAGINATION = {"first":"\u00ab","prev":"\u2039","next":"\u203a","last":"\u00bb","goto_first":"Go to first page","goto_prev":"Go to previous page","goto_next":"Go to next page","goto_last":"Go to last page","current_page":"Current page is","goto_page":"Go to page"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/plugins/content-views-query-and-display-post-page/public/assets/js/cv.js?ver=2.5.0.1' id='pt-cv-content-views-script-js'></script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/plugins/t4b-news-ticker/assets/js/jquery.liscroll.js?ver=1.2.7' id='liscroll-js'></script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/plugins/ultimate-social-media-plus/js/shuffle/modernizr.custom.min.js?ver=6.1.10' id='SFSIPLUSjqueryModernizr-js'></script>
+<script type='text/javascript' id='SFSIPLUSCustomJs-js-extra'>
+/* <![CDATA[ */
+var sfsi_plus_ajax_object = {"ajax_url":"https:\/\/www.kleayurworld.edu.in\/wp-admin\/admin-ajax.php","plugin_url":"https:\/\/www.kleayurworld.edu.in\/wp-content\/plugins\/ultimate-social-media-plus\/","rest_url":"https:\/\/www.kleayurworld.edu.in\/wp-json\/"};
+var sfsi_plus_links = {"admin_url":"https:\/\/www.kleayurworld.edu.in\/wp-admin\/","plugin_dir_url":"https:\/\/www.kleayurworld.edu.in\/wp-content\/plugins\/ultimate-social-media-plus\/","rest_url":"https:\/\/www.kleayurworld.edu.in\/wp-json\/","pretty_perma":"yes"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/plugins/ultimate-social-media-plus/js/custom.js?ver=3.5.7' id='SFSIPLUSCustomJs-js'></script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/themes/education-hub/js/skip-link-focus-fix.min.js?ver=20130115' id='education-hub-skip-link-focus-fix-js'></script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/themes/education-hub/third-party/cycle2/js/jquery.cycle2.min.js?ver=2.1.6' id='cycle2-js'></script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/themes/education-hub/js/custom.min.js?ver=1.0' id='education-hub-custom-js'></script>
+<script type='text/javascript' id='education-hub-navigation-js-extra'>
+/* <![CDATA[ */
+var EducationHubScreenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/themes/education-hub/js/navigation.min.js?ver=20120206' id='education-hub-navigation-js'></script>
+<script type='text/javascript' src='https://www.kleayurworld.edu.in/wp-content/plugins/wp-samw/samw.js.php?ver=6.1.10' id='samw_js-js'></script>
+    <style>
+                /*Custom CSS*/
+            </style>
+
+    <style>
+            </style>
+
+    <script>
+        var post_grid_vars = {"siteUrl":"https:\/\/www.kleayurworld.edu.in"}    </script>
+
+</body>
+</html>

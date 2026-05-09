@@ -1261,11 +1261,34 @@ a:hover {
 
 .member-item {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
   padding: 1.2rem;
   background: var(--white);
   border-radius: 12px;
   border: 1px solid rgba(0,0,0,0.04);
+  transition: all 0.3s ease;
+}
+
+.member-item:hover {
+  transform: translateX(10px);
+  border-color: var(--ata-gold);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.member-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid var(--ata-cream-dark);
+}
+
+.member-info {
+  display: flex;
+  flex-direction: column;
 }
 
 .member-name {
@@ -1278,6 +1301,23 @@ a:hover {
   font-size: 0.85rem;
   color: var(--ata-text-light);
   margin-top: 0.2rem;
+}
+
+/* Committee Card Image Update */
+.committee-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1.5rem;
+  display: block;
+  border: 3px solid var(--ata-gold-light);
+  box-shadow: 0 5px 15px rgba(184, 153, 90, 0.2);
+  transition: transform 0.4s ease;
+}
+
+.committee-card:hover .committee-avatar {
+  transform: scale(1.1);
 }
 
 /* Schedule Section */
