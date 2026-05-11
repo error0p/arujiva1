@@ -905,7 +905,93 @@ a:hover {
   .btn {
     width: 100%;
   }
+
+  .conclusion-text {
+    font-size: 1rem;
+  }
 }
+
+/* ── Special Event ── */
+.special-event-section {
+  padding: 6rem 2rem;
+  background: var(--white);
+}
+
+.special-event-box {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: var(--ata-teal);
+  color: var(--white);
+  border-radius: 40px;
+  padding: 4rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(11, 58, 122, 0.2);
+}
+
+.special-event-box::before {
+  content: 'SPECIAL';
+  position: absolute;
+  top: 2rem;
+  right: -3rem;
+  background: var(--ata-gold);
+  color: var(--charcoal);
+  padding: 0.5rem 5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  transform: rotate(45deg);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.event-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ata-gold);
+  margin-bottom: 1.5rem;
+}
+
+.event-heading {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 2.5rem;
+}
+
+.event-text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  font-weight: 300;
+  opacity: 0.95;
+}
+
+.event-text strong {
+  color: var(--ata-gold);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .special-event-box {
+    padding: 2.5rem 2rem;
+  }
+  
+  .event-heading {
+    font-size: 1.8rem;
+  }
+  
+  .event-text {
+    font-size: 1rem;
+  }
+}
+
+/* ========================================
+   ORGANIZING COMMITTEE
+   ======================================== */
 
 /* ========================================
    ATARAXIS FOOTER
