@@ -999,6 +999,12 @@ a:hover {
 
 .ataraxis-footer {
   background: var(--ata-teal);
+  background-image: 
+    linear-gradient(to bottom, rgba(14, 58, 54, 0.92), rgba(14, 58, 54, 0.98)),
+    url('silhouette.png');
+  background-size: cover;
+  background-position: center 20%;
+  background-blend-mode: multiply;
   color: white;
   border-radius: 40px 40px 0 0;
   padding: 6rem 5% 0;
