@@ -594,8 +594,68 @@ a:hover {
   }
 }
 
+/* --- Associate Partners Carousel --- */
+.partners-section {
+  margin-bottom: 4rem;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.partners-carousel {
+  overflow: hidden;
+  padding: 1rem 0;
+  position: relative;
+  width: 100%;
+}
+
+.partners-track {
+  display: flex;
+  width: calc(250px * 18); /* Adjust based on logo count and size */
+  animation: scrollLeft 30s linear infinite;
+}
+
+.partner-logo {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.partner-logo img {
+  max-width: 180px;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.4s ease;
+}
+
+.partner-logo:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px * 9)); } /* Half of total width for seamless loop */
+}
+
 @media (max-width: 768px) {
-  .info-section {
+  .partner-logo {
+    width: 180px;
+  }
+  .partner-logo img {
+    max-width: 120px;
+  }
+  @keyframes scrollLeft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-180px * 9)); }
+  }
+}
+
+.info-section {
     padding: 5rem 1.5rem;
   }
 
