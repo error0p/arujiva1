@@ -1709,3 +1709,154 @@ a:hover {
     grid-template-columns: 1fr;
   }
 }
+
+/* ── MOBILE RESPONSIVE REFINEMENTS ── */
+
+@media (max-width: 1024px) {
+  .ataraxis-header {
+    padding: 0 1.5rem;
+  }
+  
+  .header-links {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 860px) {
+  /* Navbar Mobile Toggle */
+  .nav-mobile-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 200;
+  }
+
+  .nav-mobile-toggle span {
+    width: 25px;
+    height: 2px;
+    background: var(--ata-teal);
+    transition: all 0.3s ease;
+  }
+
+  /* Hamburger to X Animation */
+  .nav-open .nav-mobile-toggle span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .nav-open .nav-mobile-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+  .nav-open .nav-mobile-toggle span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  .header-links, 
+  .header-actions {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background: var(--ata-cream);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+    z-index: 150;
+  }
+
+  .header-links {
+    padding-bottom: 2rem;
+  }
+
+  .header-actions {
+    height: auto;
+    top: 70%;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .nav-open .header-links {
+    right: 0;
+  }
+  
+  .nav-open .header-actions {
+    right: 0;
+  }
+
+  .nav-marker {
+    display: none;
+  }
+
+  /* Hero Section */
+  .hero-content {
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .header-glass-panel {
+    width: 90% !important;
+    left: 5% !important;
+    height: auto !important;
+    min-height: 400px;
+  }
+
+  /* Grids */
+  .strengths-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .committee-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partners-carousel-container {
+    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  }
+
+  .partner-logo {
+    height: 60px;
+  }
+
+  /* Abstract & Register Pages */
+  .guidelines-card {
+    padding: 1.5rem;
+  }
+  
+  .info-table th, .info-table td {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .section-heading {
+    font-size: 1.8rem;
+  }
+  
+  .ataraxis-footer .footer-inner {
+    padding: 2rem 1.5rem;
+  }
+  
+  .footer-main {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}

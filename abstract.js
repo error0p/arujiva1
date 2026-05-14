@@ -338,4 +338,19 @@ document.addEventListener('DOMContentLoaded', () => {
     moveMarker(currentActive);
   });
 
+  // ── Mobile Menu Toggle ──
+  const mobileToggle = document.getElementById('mobile-toggle');
+  if (mobileToggle && nav) {
+    mobileToggle.addEventListener('click', () => {
+      nav.classList.toggle('nav-open');
+    });
+
+    // Close menu when clicking a link
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('nav-open');
+      });
+    });
+  }
+
 });
