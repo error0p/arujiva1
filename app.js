@@ -148,4 +148,15 @@
     });
   }
 
+  // ── Hero Carousel Logic ──
+  const heroCarouselItems = document.querySelectorAll('#hero-carousel .carousel-item');
+  if (heroCarouselItems.length > 1) {
+    let currentHeroIndex = 0;
+    setInterval(() => {
+      heroCarouselItems[currentHeroIndex].classList.remove('active');
+      currentHeroIndex = (currentHeroIndex + 1) % heroCarouselItems.length;
+      heroCarouselItems[currentHeroIndex].classList.add('active');
+    }, 5000); // Cross-fade every 5 seconds
+  }
+
 })();
