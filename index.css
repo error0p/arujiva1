@@ -1201,6 +1201,52 @@ a:hover {
   border-color: white;
 }
 
+/* Floating Back to Top */
+.back-to-top-floating {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  background: var(--ata-teal);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+  cursor: pointer;
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px) scale(0.8);
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.back-to-top-floating.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.back-to-top-floating:hover {
+  background: var(--ata-gold);
+  color: var(--ata-teal);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+}
+
+.back-to-top-floating svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  transition: transform 0.3s ease;
+}
+
+.back-to-top-floating:hover svg {
+  transform: translateY(-2px);
+}
+
 .footer-col h4 {
   font-size: 1.1rem;
   font-weight: 600;
