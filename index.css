@@ -1079,13 +1079,11 @@ a:hover {
    ======================================== */
 
 .ataraxis-footer {
-  background: var(--ata-teal);
-  background-image: 
-    linear-gradient(to bottom, rgba(14, 58, 54, 0.85), rgba(14, 58, 54, 0.95)),
-    url('assets/footer-onco-bg.png');
+  background-color: #07224A;
+  background-image: url('assets/footer-onco-bg.png');
   background-size: cover;
   background-position: center center;
-  background-blend-mode: multiply;
+  background-repeat: no-repeat;
   color: white;
   border-radius: 40px 40px 0 0;
   padding: 6rem 5% 0;
