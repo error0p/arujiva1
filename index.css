@@ -305,26 +305,7 @@ a:hover {
   color: var(--ata-teal);
 }
 
-.nav-marker {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 6px;
-  background: transparent;
-  pointer-events: none;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-}
 
-.nav-marker::after {
-  content: '';
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 7px solid var(--ata-gold);
-}
 
 .header-contact a {
   display: flex;
@@ -1840,9 +1821,7 @@ a:hover {
     right: 0;
   }
 
-  .nav-marker {
-    display: none;
-  }
+
 
   /* Hero Section */
   .hero-content {

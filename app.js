@@ -61,17 +61,7 @@
     }, { passive: true });
   }
 
-  // ── Nav Marker (Sliding Triangle) ──
-  const navMarker = document.querySelector('.nav-marker');
-  const navLinks = document.querySelectorAll('.header-links a, .header-actions a');
-
-  function moveMarker(link) {
-    if (!navMarker || !link) return;
-    const rect = link.getBoundingClientRect();
-    const navRect = nav.getBoundingClientRect();
-    const center = rect.left + rect.width / 2 - navRect.left;
-    navMarker.style.transform = `translateX(${center - 5}px)`;
-  }
+  const navLinks = document.querySelectorAll('.header-links a, .header-actions a, .dropdown-item');
 
   // Detect active link by URL
   function getActiveLink() {
@@ -81,37 +71,21 @@
     let active = null;
     navLinks.forEach(link => {
       const href = link.getAttribute('href');
-      if (href === page || (page === 'index.html' && href === 'index.html')) {
+      if (href === page) {
         active = link;
       }
     });
-    return active || document.querySelector('.header-links a.active') || navLinks[0];
+    return active || document.querySelector('.header-links a.active');
   }
 
   const activeLink = getActiveLink();
   if (activeLink) activeLink.classList.add('active');
-  
-  setTimeout(() => moveMarker(activeLink), 150);
 
   navLinks.forEach(link => {
-    link.addEventListener('mouseenter', () => moveMarker(link));
     link.addEventListener('click', () => {
       navLinks.forEach(l => l.classList.remove('active'));
       link.classList.add('active');
-      moveMarker(link);
     });
-  });
-
-  if (nav) {
-    nav.addEventListener('mouseleave', () => {
-      const currentActive = document.querySelector('.active') || activeLink;
-      moveMarker(currentActive);
-    });
-  }
-
-  window.addEventListener('resize', () => {
-    const currentActive = document.querySelector('.active') || activeLink;
-    moveMarker(currentActive);
   });
 
   // ── Mobile Menu Toggle ──
