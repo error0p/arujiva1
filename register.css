@@ -101,7 +101,7 @@
 .fee-card {
   background: var(--white);
   border-radius: var(--radius-md);
-  padding: 3rem;
+  padding: clamp(1.5rem, 5vw, 3rem);
   box-shadow: var(--shadow-md);
   border: 1px solid var(--cream-dark);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -206,7 +206,7 @@
 .form-card {
   background: var(--white);
   border-radius: var(--radius-md);
-  padding: 3rem;
+  padding: clamp(1.5rem, 5vw, 3rem);
   box-shadow: var(--shadow-md);
   border: 1px solid var(--cream-dark);
 }
