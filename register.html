@@ -38,12 +38,24 @@
       </ul>
 
       <div class="header-actions">
-        <a href="abstract.html" class="btn-nav btn-nav-outline">
-          <span>Submit Abstract</span>
-        </a>
-        <a href="register.html" class="active btn-nav btn-nav-primary">
-          <span>Register Now</span>
-        </a>
+        <div class="nav-dropdown">
+          <a href="#" class="btn-nav btn-nav-primary btn-nav-dropdown">
+            <span>Register</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="register.html" class="dropdown-item">
+              <span>Register Now</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="abstract.html" class="dropdown-item">
+              <span>Submit Abstract</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
     </nav>
 
