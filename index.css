@@ -171,7 +171,7 @@ a:hover {
   height: 5.5rem;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+  filter: drop-shadow(0 0 15px rgba(0,0,0,0.8));
 }
 
 .header-glass-panel {
@@ -199,7 +199,7 @@ a:hover {
   padding: 0;
   width: clamp(250px, 30vw, 420px);
   transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-  filter: drop-shadow(0 0 25px rgba(0, 230, 204, 0.2)); 
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.8)); 
   animation: logoGlow 4s ease-in-out infinite alternate, fadeUp 1s ease both 0.6s;
 }
 
@@ -1095,7 +1095,7 @@ a:hover {
 
 .ataraxis-footer {
   background: #1488a0 url('footer-brand-bg.png') center center / cover no-repeat;
-  color: white;
+  color: #0933a2;
   border-radius: 40px 40px 0 0;
   padding: 6rem 5% 0;
   margin-top: 8rem;
@@ -1144,7 +1144,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
-  border-left: 1px solid rgba(255,255,255,0.2);
+  border-left: 1px solid rgba(9, 51, 162, 0.2);
   padding-left: 1.5rem;
 }
 
@@ -1152,9 +1152,9 @@ a:hover {
   font-size: 0.65rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  opacity: 0.7;
+  opacity: 0.8;
   margin: 0 !important;
-  color: white;
+  color: #0933a2;
   max-width: none !important;
 }
 
@@ -1260,7 +1260,7 @@ a:hover {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 2.5rem;
-  color: white;
+  color: #0933a2;
 }
 
 .footer-col ul {
@@ -1274,14 +1274,14 @@ a:hover {
 }
 
 .footer-col a {
-  color: rgba(255,255,255,0.65);
+  color: rgba(9, 51, 162, 0.8);
   font-size: 0.95rem;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .footer-col a:hover {
-  color: white;
+  color: #0933a2;
   text-decoration: underline;
 }
 
