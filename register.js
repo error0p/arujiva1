@@ -33,6 +33,13 @@
     });
   });
 
+  // ── Show/hide PG Student template notice ──
+  const positionSelect = document.getElementById('position');
+  const pgTemplateNotice = document.getElementById('pg-template-notice');
+  positionSelect.addEventListener('change', () => {
+    pgTemplateNotice.style.display = positionSelect.value === 'PG Student' ? 'flex' : 'none';
+  });
+
   // ── Show/hide abstract hint ──
   document.querySelectorAll('input[name="presenting"]').forEach(radio => {
     radio.addEventListener('change', () => {
@@ -105,9 +112,6 @@
     if (!position) { showError('f-position'); valid = false; firstError = firstError || 'f-position'; }
     if (!presenting) { showRadioError('f-presenting'); valid = false; firstError = firstError || 'f-presenting'; }
 
-    // Preferences
-    const dietary = document.querySelector('input[name="dietary"]:checked');
-    if (!dietary) { showRadioError('f-dietary'); valid = false; firstError = firstError || 'f-dietary'; }
 
     // Declaration
     const declaration = document.getElementById('declaration').checked;
