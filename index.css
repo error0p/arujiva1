@@ -1081,7 +1081,7 @@ a:hover {
 .ataraxis-footer {
   background: var(--ata-teal);
   background-image: 
-    linear-gradient(to bottom, rgba(14, 58, 54, 0.94), rgba(14, 58, 54, 0.98)),
+    linear-gradient(to bottom, rgba(14, 58, 54, 0.85), rgba(14, 58, 54, 0.95)),
     url('assets/footer-onco-bg.png');
   background-size: cover;
   background-position: center center;
@@ -1146,10 +1146,15 @@ a:hover {
 }
 
 .footer-badge-logos img {
-  height: 48px;
+  height: 52px;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.2));
+}
+
+.footer-badge-logos img[src*="ministry-ayush"] {
+  filter: brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0,0,0,0.2));
+  opacity: 0.95;
 }
 
 .ayush-footer-badge p {
