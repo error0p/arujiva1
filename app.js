@@ -30,7 +30,7 @@
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.05 }
     );
     reveals.forEach(el => observer.observe(el));
   } else {
