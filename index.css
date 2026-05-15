@@ -153,10 +153,10 @@ a:hover {
 }
 
 .footer-logo-img {
-  height: 6.8rem;
+  height: 8.5rem;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
+  filter: drop-shadow(0 4px 15px rgba(0,0,0,0.2));
 }
 
 .header-glass-panel {
@@ -1218,20 +1218,20 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 0.8rem;
-  border: 1px solid rgba(255,255,255,0.25);
+  border: 1px solid rgba(0,0,0,0.3);
   padding: 0.8rem 1.5rem;
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.12em;
-  color: white;
+  color: #000000;
   text-decoration: none;
   transition: all 0.3s ease;
   text-transform: uppercase;
 }
 
 .back-to-top:hover {
-  background: rgba(255,255,255,0.08);
-  border-color: white;
+  background: rgba(0,0,0,0.05);
+  border-color: #000000;
 }
 
 /* Floating Back to Top */
@@ -1312,11 +1312,11 @@ a:hover {
 
 .footer-copyright {
   background: var(--ata-gold);
-  color: var(--ata-teal);
+  color: #000000;
   text-align: center;
   padding: 0.9rem;
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0 -6% 0; /* Bleed out */
   position: relative;
   z-index: 2;
