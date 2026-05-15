@@ -1915,3 +1915,97 @@ a:hover {
     gap: 3rem;
   }
 }
+
+/* Connect Section */
+.connect-section {
+  padding: 8rem 2rem;
+  background: var(--ata-cream-dark);
+}
+
+.connect-card {
+  background: var(--white);
+  border-radius: 40px;
+  padding: 4rem;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.06);
+  border: 1px solid rgba(11, 58, 122, 0.05);
+}
+
+.connect-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.connect-info p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--ata-text-light);
+  margin-top: 1.5rem;
+}
+
+.connect-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.connect-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.connect-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  background: rgba(14, 136, 160, 0.08);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ata-teal);
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.connect-item:hover .connect-icon {
+  background: var(--ata-teal);
+  color: white;
+  transform: translateY(-3px);
+}
+
+.connect-detail span {
+  display: block;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ata-gold);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.connect-detail a {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0933a2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.connect-detail a:hover {
+  color: var(--ata-teal);
+}
+
+@media (max-width: 992px) {
+  .connect-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .connect-card {
+    padding: 2.5rem;
+  }
+  .connect-detail a {
+    font-size: 1.2rem;
+  }
+}
