@@ -1270,10 +1270,11 @@ a:hover {
   background: var(--ata-gold);
   color: var(--ata-teal);
   text-align: center;
-  padding: 0.9rem;
+  padding: 1.2rem;
   font-size: 0.75rem;
   font-weight: 600;
-  margin: 0 -6% 0; /* Bleed out */
+  margin: 0;
+  width: 100%;
   position: relative;
   z-index: 2;
 }
